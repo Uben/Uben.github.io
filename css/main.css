@@ -1,12 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
-
+/*FIND: red to change the color of everything red on site*/
 body {
     width: 100%;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: #4f535f;
+    color: #000;
     background-color: #fff;
     -webkit-overflow-scrolling:touch;
 }
@@ -71,8 +71,8 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #41dd85 !important;
-    border-bottom: 1px dotted #41dd85;
+    color: red !important;
+    border-bottom: 1px dotted #000;
 }
 
 .light {
@@ -126,20 +126,20 @@ a:focus {
     outline: 0;
     background: none;
     color: #fff !important;
-    border-bottom: 2px solid #41dd85;
+    border-bottom: 2px solid red;
 }
 
 .top-nav-collapse .nav li a:hover{
     outline: 0;
     background: none;
-    color: #41dd85 !important;
+    color: red !important;
     border-bottom: none !important;
 }
 
 .navbar-custom .nav li.active a {
     outline: 0;
     background: none;
-    color: #41dd85 !important;
+    color: red !important;
     border-bottom: none !important;
 }
 
@@ -167,13 +167,14 @@ a:focus {
         border-bottom: none !important;
     }
     .navbar-custom .nav li a:hover {
-        color: #41dd85 !important;
+        color: red !important;
     }
     .brand-heading {
         font-size: 36px !important;
         font-weight: 600;
         letter-spacing: -0.05em;
         color: #fff;
+        background-image: url("/img/road.jpg");
     }
     .intro-text {
         font-size: 16px !important;
@@ -417,7 +418,7 @@ a:focus {
 }
 
 .about-section a:hover {
-    color: #41dd85;
+    color: red;
 }
 
 .skill {
@@ -713,7 +714,7 @@ a:focus {
 
 .email:hover {
     color: #ffffff !important;
-    border-bottom: 2px solid #41dd85;
+    border-bottom: 2px solid red;
 }
 
 .contact-section i {
@@ -728,7 +729,7 @@ a:focus {
 }
 
 .contact-section i:hover {
-    color: #41dd85;
+    color: red;
 }
 
 .contact-section .social {
@@ -789,9 +790,9 @@ a:focus {
     -moz-border-radius: 3px; 
     -webkit-border-radius: 3px; 
     border-radius: 3px;
-    color: #41dd85;
+    color: #fff;
     background: none;
-    border: 2px solid #41dd85;
+    border: 2px solid #fff;
     font-family: 'Montserrat', sans-serif;
     display: block;
     position: relative;
@@ -803,12 +804,13 @@ a:focus {
     font-weight: 400;
     text-decoration: none;
     font-size: 12px;
+    margin-right: 10px;
 }
 
 .button:hover {
-    color: #fff !important;
-    border: 2px solid #41dd85;
-    background: #41dd85;
+    color: white !important;
+    border: 2px solid white;
+    background: red;
 }
 
 .button-full-small {
@@ -819,7 +821,7 @@ a:focus {
     -webkit-border-radius: 3px; 
     border-radius: 3px;
     color: #ffffff;
-    background: #41dd85 !important;
+    background: red !important;
     border: none !important;
     font-family: 'Montserrat', sans-serif;
     display: block;
@@ -886,6 +888,10 @@ a:focus {
     ul.banner-social-buttons>li:last-child {
         margin-bottom: 0;
     }
+}
+
+.social {
+    font-size: 20px;
 }
 
 ::selection{background:rgba(0,0,0,0.1);}
