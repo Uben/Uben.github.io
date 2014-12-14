@@ -63,7 +63,7 @@ p {
 }
 
 a {
-    border-bottom: 1px dotted #666665;
+    border-bottom: 1px solid #666665;
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
@@ -421,6 +421,7 @@ a:focus {
 
 .about-section a:hover {
     color: red;
+    border-bottom: 1px solid red;
 }
 
 .skill {
