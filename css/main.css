@@ -188,6 +188,7 @@ a:focus {
 
     .profile {
         padding-bottom: 25px;
+        margin-bottom: 500px;
     }
     .about-section {
         padding-top: 140px;
@@ -414,8 +415,9 @@ a:focus {
     font-weight: 400;
 }
 
+/*Padding for the paragraph about me section*/
 .about-section p {
-    padding-top: 5px;
+    padding-top: 30px;
     color: #666665;
 }
 
@@ -469,12 +471,12 @@ a:focus {
     /*effects rounding on picture*/
     border-radius: 60%;
     /*effects positioning moves left to right*/
-    margin-left: -100px;
+    /*margin-left: -100px;
     /*effects size of picture*/
     width: 175px;
     /* object-position and float are both needed to keep picture*/
-    object-position: left;
-    float: left;
+    object-position: center;
+    float: ;
     height: auto;
     text-align: justify;
 }
@@ -708,7 +710,7 @@ a:focus {
     width: 100%;
     padding: 50px, 0;
     /* portfolio - contact divider*/
-    margin-top: -200px;
+    margin-top: -250px;
     color: #666665;
     background: url(../img/skyline_city.jpg) no-repeat center center scroll;
     background-color: gray;
