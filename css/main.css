@@ -170,18 +170,20 @@ a:focus {
     .navbar-custom .nav li a:hover {
         color: red !important;
     }
+/* bottom picture*/    
     .brand-heading {
         font-size: 36px !important;
         font-weight: 600;
         letter-spacing: -0.05em;
-        color: #fff;
-        background-image: url("/img/road.jpg");
+        color: #A67D3D;
+        background-image: url("/img/skyline_city.jpg");
     }
     .intro-text {
         font-size: 16px !important;
         line-height: 30px;
         font-weight: 100;
         text-align: center;
+        margin-top: 800px;
     }
 
     .profile {
@@ -252,6 +254,7 @@ a:focus {
     }
 }
 
+/*Top Picture*/
 .intro {
     display: table;
     width: 100%;
@@ -259,7 +262,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
-    background: url(../img/city.jpg) no-repeat center center scroll;
+    background: url(../img/books.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -707,7 +710,7 @@ a:focus {
     /* portfolio - contact divider*/
     margin-top: -200px;
     color: #666665;
-    background: url(../img/road1.jpg) no-repeat center center scroll;
+    background: url(../img/skyline_city.jpg) no-repeat center center scroll;
     background-color: gray;
     -webkit-background-size: cover;
     -moz-background-size: cover;
