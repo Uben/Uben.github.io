@@ -175,8 +175,7 @@ a:focus {
         font-size: 36px !important;
         font-weight: 600;
         letter-spacing: -0.05em;
-        color: #A67D3D;
-        background-image: url("/img/skyline_city.jpg");
+        color: white;
     }
     .intro-text {
         font-size: 16px !important;
@@ -298,6 +297,7 @@ a:focus {
     font-weight: 600;
     letter-spacing: -0.05em;
     color: white;
+    background-color: none !important;
 }
 
 .intro-text {
@@ -723,11 +723,11 @@ a:focus {
 }
 
 .contact-section {
-    min-height: 500px;
+    min-height: 450px;
     width: 100%;
     padding: 50px, 0;
     /* portfolio - contact divider*/
-    margin-top: -250px;
+    margin-top: -225px;
     color: #666665;
     background: url(../img/skyline_city.jpg) no-repeat center center scroll;
     background-color: gray;
@@ -913,10 +913,10 @@ a:focus {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #28c3ab;
+    border: 1px solid red;
     outline: 0;
     color: #000;
-    background-color: #28c3ab;
+    background-color: red;
 }
 
 .btn-huge {
