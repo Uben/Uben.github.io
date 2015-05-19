@@ -183,17 +183,21 @@ a:focus {
         line-height: 30px;
         font-weight: 100;
         text-align: center;
-        margin-top: 800px;
+        margin-top: 88px;
     }
 
     .profile {
         padding-bottom: 25px;
-        margin-bottom: 500px;
+        margin-bottom: 0px;
     }
     .about-section {
         padding-top: 140px;
         margin-top: -150px;
         min-height: 700px !important;
+    }
+    .codepic{
+        margin-top: 30px !important;
+        padding-bottom: px !important; /* BACK HERE to add hover github */
     }
     .service-section {
         min-height: 650px !important;
@@ -201,14 +205,21 @@ a:focus {
     .service-section h2 {
         padding-top: 100px !important;
     }
+    .contact-section{
+        padding-bottom: -1px !important;
+    }
     .contact-left {
-        padding-right: 0px !important;
-        margin-top: 70px !important;
-    }  
+        padding-right: 500px !important;
+        padding-left: 10px !important; 
+        margin-top: 150px !important;
+    } 
+    .contact-left h3 {
+        /* Social Media Bottom */
+    }
     .contact-right {
         border-left: none !important;
-        padding-left: 20px !important;
-        margin-top: 70px !important;
+        padding-left: 10px !important;
+        margin-top: 40px !important;
     } 
 }
 
