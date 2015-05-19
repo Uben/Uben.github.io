@@ -212,10 +212,16 @@ a:focus {
         padding-right: 500px !important;
         padding-left: 10px !important; 
         margin-top: 150px !important;
+        text-align: center !important;
     } 
     .contact-left h3 {
         /* Social Media Bottom */
+        border-left: none !important;
+        margin-right: -200px !important;
     }
+    .contact-left a{
+        
+    } 
     .contact-right {
         border-left: none !important;
         padding-left: 10px !important;
