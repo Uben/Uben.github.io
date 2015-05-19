@@ -728,7 +728,7 @@ a:focus {
 }
 
 .contact-section {
-    min-height: 450px;
+    min-height: 300px;
     width: 100%;
     padding: 50px, 0;
     /* portfolio - contact divider*/
@@ -749,6 +749,7 @@ a:focus {
 
 .contact-left {
     padding-right: 20px;
+    margin-top: 100px;
 }
 
 .contact-right {
@@ -820,9 +821,19 @@ a:focus {
 }
 
 #footer {
-    height: 40px;
+    height: 80px;
     background-color: #222;
     width: 100%;
+    padding-top: 10px
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social .icons {
+    max-height: 32px !important;
+    max-width: auto !important;
 }
 
 .footer-section {
