@@ -817,7 +817,8 @@ a:focus {
 }
 
 .contact-section .button {
-    float: left;
+    float: center;
+    padding-right: 50px !important;
 }
 
 #footer {
