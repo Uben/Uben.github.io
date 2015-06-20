@@ -13,6 +13,7 @@ body {
 
 
 html {
+    max-width: 1920px;
     width: 100%;
     height: 100%;
 }
@@ -194,10 +195,11 @@ a:focus {
         margin-top: -150px;
         min-height: 700px !important;
     }
-    .codepic{
-        margin-top: 30px !important;
-        padding-bottom: px !important; /* BACK HERE to add hover github */
+
+    #github {
+        
     }
+    
     .service-section {
         min-height: 650px !important;
     }
@@ -555,6 +557,7 @@ a:focus {
     height: 300px;
     margin-top: 120px;
     position: relative;
+    background-image: url("img/code.png");
 }
 
 .portfolio-section h2 {
@@ -723,6 +726,10 @@ a:focus {
     right: 30px;
 }
 
+.github-section {
+    
+}
+
 .contact-left, .contact-right {
     margin-top: 150px;
 }
@@ -747,24 +754,9 @@ a:focus {
     color: #ffffff;
 }
 
-.contact-left {
-    padding-right: 20px;
-    margin-top: 100px;
-}
-
-.contact-right {
-    border-left: 1px solid #DEF1E5;
-    padding-left: 120px;
-}
-
 .pstatus {
     font-weight: 400 !important;
     padding: 0px !important;
-}
-
-.contact-right span {
-    font-weight: 300;
-    padding: 0 10px;
 }
 
 .email {
@@ -823,7 +815,7 @@ a:focus {
 
 #footer {
     height: 80px;
-    background-color: #222;
+    background-color: white;
     width: 100%;
     padding-top: 10px
 }
@@ -835,10 +827,16 @@ a:focus {
 .footer-social .icons {
     max-height: 32px !important;
     max-width: auto !important;
+    background-color: white;
+}
+
+#github {
+    margin-top: -120px;
 }
 
 .footer-section {
-    background-color: #222;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .footer-section p {
@@ -847,8 +845,8 @@ a:focus {
     /*negative value takes white bar under footer away*/
     margin-bottom: -10px;
     text-align: center;
-    font-size: 11px;
-    color: #b3b3b3;
+    font-size: 15px;
+    color: #333;
 }
 
 @media(min-width:760px) {
