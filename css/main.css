@@ -22,7 +22,7 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: grey;
+    color: red;
 }
 
 /* mouse over link */
@@ -32,13 +32,20 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: red;
+    color: grey;
 }
 
 /* ******** Universal ******** */
 .section-header {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
+    letter-spacing: 0.15em;
+}
+
+.section-header-two {
+    color: white;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.15em;
 }
 
@@ -52,6 +59,14 @@ a:active {
     font-weight: 400;
     font-size: 18px;
     margin-top: 15px;
+}
+
+.section-content-two {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 15px;
+    color: white;
 }
 
 .text-center {
@@ -69,7 +84,7 @@ a:active {
     display: table;
     width: 100%;
     height: auto;
-    padding: 150px 0;
+    padding: 330px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
     background: url(../img/books.jpg) no-repeat center center scroll;
@@ -139,10 +154,37 @@ a:active {
     margin-bottom: 30px;
 }
 
-/* ******** Photography ******** */
-.code {
+/* ******** Development ******** */
+#dev {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background-color: #404040;
+}
+
+.dev-icon {
+    max-width: 150px;
+    max-height: auto;
+    margin: 28px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+/* Centers Divs :D*/
+/* source: "https://coderwall.com/p/c4w8aw/vertically-and-horizontally-center-content-in-webkit-with-css3-flexbox" */
+.div-center {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* ******** Experience ******** 
+#experience {
 
 }
+*/
 
 /* ******** Photography ******** */
 .photo {
