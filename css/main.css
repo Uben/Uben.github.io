@@ -91,7 +91,7 @@ a:active {
     display: table;
     width: 100%;
     height: auto;
-    padding: 200px 0;
+    padding: 235px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
     background-color: black;
@@ -99,7 +99,13 @@ a:active {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background: url(../img/books.jpg) no-repeat center center scroll;
+    background: url(../img/nyc.jpg) no-repeat center center scroll;
+}
+
+@media (max-width: 1200px) {
+    .intro {
+        background: url(../img/nyc-f.jpg) no-repeat center center scroll;
+    }
 }
 
 .intro-body {
