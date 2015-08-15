@@ -91,10 +91,10 @@ a:active {
     display: table;
     width: 100%;
     height: auto;
-    padding: 330px 0;
+    padding: 200px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
-    background-color: #000;
+    background-color: black;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
