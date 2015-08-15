@@ -91,7 +91,7 @@ a:active {
     display: table;
     width: 100%;
     height: auto;
-    padding: 270px 0;
+    padding: 295px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
     background-color: black;
@@ -111,6 +111,12 @@ a:active {
 .intro-body {
     display: table-cell;
     vertical-align: middle;
+}
+
+/* Sets a black opaque backround around item */
+.head-black {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 4px 33px;
 }
 
 .brand-heading {
@@ -172,6 +178,7 @@ a:active {
     margin-top: 40px;
     margin-left: -40px;
     margin-bottom: 30px;
+    
 }
 
 /* ******** Development ******** */
