@@ -91,7 +91,7 @@ a:active {
     display: table;
     width: 100%;
     height: auto;
-    padding: 235px 0;
+    padding: 270px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
     background-color: black;
@@ -158,18 +158,19 @@ a:active {
 
 .about-icon-one {
     margin-top: 53px;
-    margin-right: 40px;
+    margin-left: -50px;
     margin-bottom: 30px;
 }
 
 .about-icon-two {
     margin-top: 25px;
+    margin-left: -40px;
     margin-bottom: 30px;
 }
 
 .about-icon-three {
-    margin-top: 58px;
-    margin-left: 40px;
+    margin-top: 40px;
+    margin-left: -40px;
     margin-bottom: 30px;
 }
 
@@ -187,6 +188,10 @@ a:active {
     max-height: auto;
     padding-top: 40px;
     padding-bottom: 25px;
+}
+
+.rails-icon {
+    max-width: 125px;
 }
 
 /* ******** Experience ******** 
