@@ -115,7 +115,7 @@ a:active {
 
 /* Sets a black opaque backround around item */
 .head-black {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, .7);
     padding: 4px 33px;
 }
 
@@ -201,11 +201,10 @@ a:active {
     max-width: 125px;
 }
 
-/* ******** Experience ******** 
+/* ******** Experience ******** */
 #experience {
 
 }
-*/
 
 /* ******** Photography ******** */
 .photo {
@@ -213,30 +212,35 @@ a:active {
 }
 
 /* ******** Footer ******** */
+
 #footer {
-    height: 30px;
     width: 100%;
-    padding-top: 10px;
-    margin-bottom: 0px;
-    background-color: white;
-    /*border-top: solid 2px black;*/
+    height: auto;
+    color: black;
+    padding: 40px 0;
+    background-color: whitesmoke;
     font-family: 'Poppins', sans-serif;
 }
 
-.footer-social {
-    text-align: center;
+.icons {
+    background-color: whitesmoke;
+    max-width: 35px !important;
+    max-height: auto !important;
+    margin: 25px 12px;
 }
 
-.footer-social .icons {
-    max-height: 25px !important;
-    max-width: auto !important;
-    background-color: white;
-}
-
-.footer-section p {
+.footer-text {
     /*negative value takes white bar under footer away*/
-    margin-bottom: -30px;
     text-align: center;
-    font-size: 13px;
-    color: #333;
+    color: ;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 767px) {
+    .body {
+        content: "Mobile Portion: Under Construction"
+    }
 }
