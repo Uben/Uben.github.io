@@ -16,7 +16,7 @@ html {
 
 /* unvisited link */
 a:link {
-    color: darkred;
+    color: #CC0000;
 }
 /* visited link */
 a:visited {
@@ -47,7 +47,7 @@ a:active {
 
 .divider {
     padding-bottom: 15px;
-    border-bottom: solid 4px darkred;
+    border-bottom: solid 4px #CC0000;
 }
 
 .section-content {
@@ -241,6 +241,6 @@ a:active {
 
 @media (max-width: 767px) {
     .body {
-        content: "Mobile Portion: Under Construction"
+        
     }
 }
