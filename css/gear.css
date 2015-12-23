@@ -141,7 +141,7 @@
     padding: 0;
     margin-left: -2.5em;
     max-height: 3000px;
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .tower-sec {
@@ -150,11 +150,15 @@
 
 .divider-pad {
     background-color: whitesmoke;
-    padding-bottom: 50px;
+}
+
+.perp-sec {
+    margin-top: 6em;
 }
 
 .gear-specs-2 {
-    margin-left: 79px;
+    margin-right: 50px;
+    padding-left: 50
 }
 
 .gear-specs-title-2 {
@@ -192,9 +196,10 @@
     box-shadow:0;
     border-radius:0;
     padding: 0;
-    margin-left: -2.5em;
+    background-color: whitesmoke;
     max-height: 3000px;
-    max-width: 90%;
+    max-width: 95%;
+    margin-right: -9em;
 }
 
 /***************************/
