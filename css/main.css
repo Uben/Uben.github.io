@@ -225,7 +225,7 @@ a:active {
 }
 
 .rails-icon {
-    max-width: 120px;
+    max-width: 140px;
 }
 
 /**** stops all both images in both dev/about sections from blowing up and showing after screen width has shrunken. ****/
