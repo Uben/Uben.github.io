@@ -115,27 +115,19 @@ a:active {
     /* end parallax code */
 }
 
-@media (max-width: 1200px) {
-    .intro {
-        background: url(../img/nyc-f.jpg) no-repeat center center scroll;
-    }
-    .head-black {
-        background-color: rgba(0, 0, 0, .7);
-        padding: 4px 30px;
-    }
-}
-
 .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-/* Sets a black opaque backround around item
+ /*Sets a black opaque backround around item*/
+ /*background-color: rgba(0, 0, 0, .7);
+   padding: 4px 30px;*/
 
 .head-black {
-    background-color: rgba(0, 0, 0, .7);
-    padding: 4px 30px;
-} */
+    max-width: 35%;
+    margin: 0% 30%;
+} 
 
 .brand-heading {
     color: white;
@@ -171,6 +163,80 @@ a:active {
     text-align: center;
     margin-top: -5px;
 }
+
+@media (max-width: 1200px) {
+    .brand-heading {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .brand-heading {
+        font-size: 30px;
+    }
+
+    .intro-text {
+        font-size: 15px;
+    }
+
+    .intro-text-two {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 725px) {
+    .brand-heading {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 670px) {
+    .intro-text {
+        font-size: 13px;
+    }
+
+    .intro-text-two {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .brand-heading {
+        font-size: 20px;
+    }
+
+    .intro-text {
+        font-size: 10px;
+    }
+
+    .intro-text-two {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-heading {
+        font-size: 15px;
+    }
+
+    .intro-text {
+        font-size: 5px;
+    }
+
+    .intro-text-two {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .brand-heading {
+        font-size: 10px;
+    }
+}
+
+@media (max)
+
 /* ******** About ******** */
 #about {
     width: 100%;
