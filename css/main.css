@@ -168,7 +168,28 @@ a:active {
     margin-top: -5px;
 }
 
-@media (max-width: 1300px) {}
+@media (max-width: 1920px) {
+    .intro {
+        padding: 450px 0;
+    }
+
+    .head-black {
+        max-width: 25%;
+        margin: 0 37.5%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .intro {
+        padding: 390px 0;
+    }
+
+    .head-black {
+        max-width: 35%;
+        margin: 0 30%;
+    }
+}
+
 @media (max-width: 1200px) {}
 
 @media (max-width: 1150px) {
