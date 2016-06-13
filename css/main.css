@@ -256,6 +256,7 @@ a:active {
 /*  USES .DIV-CENTER TO CENTER IMAGES PAGE. ITS CRITICAL!!! */
 .about-images {
     max-width: 70%;
+    max-height: 70%;
     margin: 0 15%;
 }
 
@@ -284,8 +285,8 @@ a:active {
     letter-spacing: 0.1em;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    max-width: 40%;
-    margin: 0 30%;
+    max-width: 50%;
+    margin: 0 25%;
     
     /* Divider or the bottom border under the header of the section*/
     border-bottom: solid 4px #CC0000;
@@ -308,6 +309,7 @@ a:active {
 
 .dev-icon {
     max-width: 15%;
+    max-height: 15%;
     margin: 0 3%;
 }
 
