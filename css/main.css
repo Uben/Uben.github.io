@@ -91,7 +91,7 @@ a:active {
     display: table;
     width: 100%;
     height: auto;
-    padding: 295px 0;
+    padding: 325px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
     /*background-color:#000000;
@@ -125,8 +125,8 @@ a:active {
    padding: 4px 30px;*/
 
 .head-black {
-    max-width: 35%;
-    margin: 0% 30%;
+    max-width: 30%;
+    margin: 0 35%;
 } 
 
 .brand-heading {
@@ -164,78 +164,92 @@ a:active {
     margin-top: -5px;
 }
 
-@media (max-width: 1200px) {
-    .brand-heading {
-        font-size: 35px;
+@media (max-width: 1300px) {}
+@media (max-width: 1200px) {}
+
+@media (max-width: 1150px) {
+    .intro {
+        padding: 330px 0;
+    }
+
+    .head-black {
+        max-width: 45%;
+        margin: 0 25.5%;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
+    .intro {
+        padding: 330px 0;
+    }
+
+    .head-black {
+        max-width: 45%;
+        margin: 0 25.5%;
+    }
+}
+
+@media (max-width: 760px) {
+    .intro {
+        padding: 340px 0;
+    }
+
+    .head-black {
+        max-width: 50%;
+        margin: 0 25%;
+    }
+
+    .brand-heading {
+
+    }
+}
+@media (max-width: 725px) {}
+
+@media (max-width: 685px) {
+    .head-black {
+        max-width: 60%;
+        margin: 0 20%;
+    }
+}
+
+@media (max-width: 575px) {
+    .intro {
+        padding: 60% 0;
+    }
+
+    .head-black {
+        max-width: 70%;
+        margin: 0 15%;
+    }
+}
+
+@media (max-width: 495px) {
+    .head-black {
+        max-width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 435px) {
+    .head-black {
+        max-width: 85%;
+        margin: 0 7.5%;
+    }
+
     .brand-heading {
         font-size: 30px;
     }
 
-    .intro-text {
+    .intro-text, .intro-text-two {
         font-size: 15px;
     }
+}
 
-    .intro-text-two {
+@media (max-width: 325px) {
+    .intro-text, .intro-text-two {
         font-size: 15px;
     }
-
 }
-
-@media (max-width: 725px) {
-    .brand-heading {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 670px) {
-    .intro-text {
-        font-size: 13px;
-    }
-
-    .intro-text-two {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 600px) {
-    .brand-heading {
-        font-size: 20px;
-    }
-
-    .intro-text {
-        font-size: 10px;
-    }
-
-    .intro-text-two {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .brand-heading {
-        font-size: 15px;
-    }
-
-    .intro-text {
-        font-size: 5px;
-    }
-
-    .intro-text-two {
-        font-size: 5px;
-    }
-}
-
-@media (max-width: 360px) {
-    .brand-heading {
-        font-size: 10px;
-    }
-}
-
-@media (max)
 
 /* ******** About ******** */
 #about {
