@@ -18,6 +18,10 @@ body {
  margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* unvisited link */
 a:link {
     color: #CC0000;
@@ -36,45 +40,7 @@ a:active {
 }
 
 /* ******** Universal ******** */
-.section-header {
-    font-weight: 900;
-    letter-spacing: 0.15em;
-    font-family: 'Poppins', sans-serif;
-}
 
-.section-header-two {
-    color: white;
-    font-weight: 900;
-    letter-spacing: 0.15em;
-    font-family: 'Poppins', sans-serif;
-}
-
-.divider {
-    padding-bottom: 15px;
-    border-bottom: solid 4px #CC0000;
-}
-
-.section-content {
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.section-content-two {
-    color: white;
-    margin-top: 15px;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* Centers Divs :D*/
-/* source: "https://coderwall.com/p/c4w8aw/vertically-and-horizontally-center-content-in-webkit-with-css3-flexbox" */
 .div-center {
     display: flex;
     display: -webkit-flex;
@@ -90,7 +56,13 @@ a:active {
     margin-bottom: 0px;
 }
 
-/* ******** Intro ******** */
+
+
+
+/* ***************************************************************************** */
+/* ******************************** INTRO ************************************** */
+/* ***************************************************************************** */
+
 .intro {
     display: table;
     width: 100%;
@@ -98,14 +70,7 @@ a:active {
     padding: 325px 0;
     text-align: center;
     color: rgba(255,255,255,0.7);
-    /*background-color:#000000;
-    opacity:0.3;
-    background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-image: url(../img/nyc.jpg) no-repeat center center scroll; */
-    
+
     /* enables parallax scrolling */
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
@@ -124,11 +89,7 @@ a:active {
     vertical-align: middle;
 }
 
- /*Sets a black opaque backround around item*/
- /*background-color: rgba(0, 0, 0, .7);
-   padding: 4px 30px;*/
-
-.head-black {
+.intro-content {
     max-width: 30%;
     margin: 0 35%;
 } 
@@ -155,17 +116,7 @@ a:active {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.05em;
     text-align: center;
-    margin-top: 22px;
-}
-
-.intro-text-two {
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.05em;
-    text-align: center;
-    margin-top: -5px;
+    margin: -5px 0 0 0;
 }
 
 @media (max-width: 1920px) {
@@ -173,7 +124,7 @@ a:active {
         padding: 450px 0;
     }
 
-    .head-black {
+    .intro-content {
         max-width: 25%;
         margin: 0 37.5%;
     }
@@ -184,20 +135,18 @@ a:active {
         padding: 390px 0;
     }
 
-    .head-black {
+    .intro-content {
         max-width: 35%;
         margin: 0 30%;
     }
 }
-
-@media (max-width: 1200px) {}
 
 @media (max-width: 1150px) {
     .intro {
         padding: 330px 0;
     }
 
-    .head-black {
+    .intro-content {
         max-width: 45%;
         margin: 0 25.5%;
     }
@@ -208,7 +157,7 @@ a:active {
         padding: 330px 0;
     }
 
-    .head-black {
+    .intro-content {
         max-width: 45%;
         margin: 0 25.5%;
     }
@@ -219,19 +168,14 @@ a:active {
         padding: 340px 0;
     }
 
-    .head-black {
+    .intro-content {
         max-width: 50%;
         margin: 0 25%;
     }
-
-    .brand-heading {
-
-    }
 }
-@media (max-width: 725px) {}
 
 @media (max-width: 685px) {
-    .head-black {
+    .intro-content {
         max-width: 60%;
         margin: 0 20%;
     }
@@ -242,21 +186,21 @@ a:active {
         padding: 60% 0;
     }
 
-    .head-black {
+    .intro-content {
         max-width: 70%;
         margin: 0 15%;
     }
 }
 
 @media (max-width: 495px) {
-    .head-black {
+    .intro-content {
         max-width: 80%;
         margin: 0 10%;
     }
 }
 
 @media (max-width: 435px) {
-    .head-black {
+    .intro-content {
         max-width: 85%;
         margin: 0 7.5%;
     }
@@ -276,61 +220,95 @@ a:active {
     }
 }
 
-/* ******** About ******** */
-#about {
+
+
+/* *********************************************************************** */
+/* ******************************** ABOUT ******************************** */
+/* *********************************************************************** */
+
+.about {
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 7% 0;
     background-color: whitesmoke;
 }
 
-.about-section {
-    /* this is for the footer*/
-    margin-top: 40px;
+.about-header {
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    max-width: 40%;
+    margin: 0 30% 20px;
+
+    /* Divider or the bottom border under the header of the section*/
+    border-bottom: solid 4px #CC0000;
+}
+
+.about-content {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 10%;
+}
+
+/*  USES .DIV-CENTER TO CENTER IMAGES PAGE. ITS CRITICAL!!! */
+.about-images {
+    max-width: 70%;
+    margin: 0 15%;
 }
 
 .about-icon {
-    max-width: 180px;
+    max-width: 25%;
     max-height: auto;
+    margin: 0 10%;
+    display: inline;
 }
 
-.about-icon-one {
-    margin-top: 53px;
-    margin-left: -50px;
-    margin-bottom: 30px;
-}
 
-.about-icon-two {
-    margin-top: 25px;
-    margin-left: -40px;
-    margin-bottom: 30px;
-}
 
-.about-icon-three {
-    margin-top: 40px;
-    margin-left: -40px;
-    margin-bottom: 30px;
-    
-}
+/* ***************************************************************************** */
+/* ******************************** DEVELOPMENT ******************************** */
+/* ***************************************************************************** */
 
-/* ******** Development ******** */
-#dev {
+.dev {
     width: 100%;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding: 7% 0;
     background-color: #404040;
 }
 
-.dev-icon {
-    margin: 20px;
-    max-width: 150px;
-    max-height: 218px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.dev-header {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    max-width: 40%;
+    margin: 0 30%;
+    
+    /* Divider or the bottom border under the header of the section*/
+    border-bottom: solid 4px #CC0000;
 }
 
-.rails-icon {
-    max-width: 140px;
+.dev-content {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 10% 2%;
+}
+
+.dev-images {
+    max-width: 80%;
+    margin: 0 20%;
+}
+
+.dev-icon {
+    max-width: 15%;
+    margin: 0 3%;
 }
 
 /**** stops all both images in both dev/about sections from blowing up and showing after screen width has shrunken. ****/
@@ -339,15 +317,6 @@ a:active {
      .dev-icon {
          display:none;
      }
-    
-    .about-icon {
-         display:none;
-     }
-    
-    #dev, #about {
-        padding-bottom: 80px;
-    }
-    
 }
 
 /* ******** Experience ******** */
