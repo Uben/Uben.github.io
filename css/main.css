@@ -14,6 +14,10 @@ html {
     font-family: 'Poppins', sans-serif !important;
 }
 
+body {
+ margin: 0px;
+}
+
 /* unvisited link */
 a:link {
     color: #CC0000;
