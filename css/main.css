@@ -311,14 +311,6 @@ a:active {
     margin: 0 3%;
 }
 
-/**** stops all both images in both dev/about sections from blowing up and showing after screen width has shrunken. ****/
-/**** also gives a bigger padding to bottom of the sections ****/
-@media (max-width: 767px) {
-     .dev-icon {
-         display:none;
-     }
-}
-
 /* ******** Experience ******** */
 #experience {
 
