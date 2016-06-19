@@ -43,6 +43,12 @@ a:active    { color: grey; }    /* selected link   */
     text-align: center;
 }
 
+@media (max-width: 375px){
+    .header {
+        font-size: 1rem;
+    }
+}
+
 .content {
     font-size: .75rem;
     font-family: 'Work Sans', sans-serif;
@@ -109,6 +115,12 @@ a:active    { color: grey; }    /* selected link   */
 /*  padding: 2vh 0;
     border-top: solid 3px white;
     border-bottom: solid 3px white;*/
+}
+
+@media (max-width: 375px){
+    .brand-heading {
+        font-size: 1.8rem;
+    }
 }
 
 .intro-text {
@@ -289,6 +301,12 @@ a:active    { color: grey; }    /* selected link   */
     }
 }
 
+@media (max-width: 375px){
+    .dev-header {
+        max-width: 76vw;
+        margin: 12vw;
+    }
+}
 /* ******** Experience ******** */
 #experience {}
 
