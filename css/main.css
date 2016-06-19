@@ -1,45 +1,55 @@
 /*
-Margin: space between other items
-Padding: space added to section/div
-
 Fonts:
 font-family: 'Poppins', sans-serif;
 font-family: 'Work Sans', sans-serif;
 */
 
+
+
+/* ***************************************************************************** */
 /* ******** General ******** */
+/* ***************************************************************************** */
+
 html {
-    background-color: white;
+    font-size: 25px;
     font-weight: 400 !important;
-    font-family: 'Poppins', sans-serif !important;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
- margin: 0px;
-}
+body        { margin: 0px; }
+a           { text-decoration: none; }
+a:link      { color: #CC0000; } /* unvisited link  */
+a:visited   { color: red; }     /* visited link    */
+a:hover     { color: red; }     /* mouse over link */
+a:active    { color: grey; }    /* selected link   */
 
-a {
-    text-decoration: none;
-}
 
-/* unvisited link */
-a:link {
-    color: #CC0000;
-}
-/* visited link */
-a:visited {
-    color: red;
-}
-/* mouse over link */
-a:hover {
-    color: red;
-}
-/* selected link */
-a:active {
-    color: grey;
-}
 
+/* ***************************************************************************** */
 /* ******** Universal ******** */
+/* ***************************************************************************** */
+
+.section {
+    width: 100%;
+    padding: 5vh 0;
+}
+
+.header {
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 0.2vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.content {
+    font-size: .75rem;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    max-width: 80vw;
+    margin: 0 10vw;
+}
 
 .div-center {
     display: flex;
@@ -50,11 +60,12 @@ a:active {
     -webkit-align-items: center;
 }
 
-/* ******** Navbar ******** */
-.navbar {
-    /* Nav to stick to top of .intro section */
-    margin-bottom: 0px;
-}
+
+
+/* ***************************************************************************** */
+/* ******************************** Navbar ************************************* */
+/* ***************************************************************************** */
+.navbar { margin-bottom: 0px; } /* Nav to stick to top of .intro section */
 
 
 
@@ -66,14 +77,13 @@ a:active {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 325px 0;
-    text-align: center;
+    padding: 30vh 0;
+    color: white !important;
     color: rgba(255,255,255,0.7);
 
     /* enables parallax scrolling */
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-image: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-attachment: fixed;
@@ -89,37 +99,28 @@ a:active {
     vertical-align: middle;
 }
 
-.intro-content {
-    max-width: 30%;
-    margin: 0 35%;
-} 
-
 .brand-heading {
-    color: white;
-    font-size: 40px;
+    margin: 0;
+    font-size: 2rem;
     font-weight: 800;
-    letter-spacing: 0.2em;
-    font-family: 'Poppins', sans-serif;
-    background-color: none !important;
-    
+    letter-spacing: .3vw;
     /* For Border lines above and below brand heading */
-    padding-top: 18px;
-    padding-bottom: 14px;
+
+/*  padding: 2vh 0;
     border-top: solid 3px white;
-    border-bottom: solid 3px white;
+    border-bottom: solid 3px white;*/
 }
 
 .intro-text {
-    color: white;
-    font-size: 20px;
+    font-size: .7rem;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.05em;
+    letter-spacing: .1vw;
     text-align: center;
     margin: -5px 0 0 0;
 }
 
-@media (max-width: 1920px) {
+/*@media (max-width: 1920px) {
     .intro {
         padding: 450px 0;
     }
@@ -218,7 +219,7 @@ a:active {
     .intro-text, .intro-text-two {
         font-size: 15px;
     }
-}
+}*/
 
 
 
@@ -226,33 +227,15 @@ a:active {
 /* ******************************** ABOUT ******************************** */
 /* *********************************************************************** */
 
-.about {
-    width: 100%;
-    padding: 7% 0;
-    background-color: whitesmoke;
-}
+.about { background-color: whitesmoke; }
 
 .about-header {
-    font-size: 35px;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    max-width: 40%;
-    margin: 0 30% 20px;
-
-    /* Divider or the bottom border under the header of the section*/
-    border-bottom: solid 4px #CC0000;
+    max-width: 40vw;
+    margin: 0 30vw 5vh;
+    border-bottom: solid 4px #CC0000; /* Divider or the bottom border under the header of the section*/
 }
 
-.about-content {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    max-width: 80%;
-    margin: 0 10%;
-}
+.about-content {}
 
 /*  USES .DIV-CENTER TO CENTER IMAGES PAGE. ITS CRITICAL!!! */
 .about-images {
@@ -267,51 +250,25 @@ a:active {
     margin: 0 5%;
 }
 
-@media (min-width:; 600px) {
-    .about-header {
-        font-size: 35px;
-    }
-}
-
-
 
 /* ***************************************************************************** */
 /* ******************************** DEVELOPMENT ******************************** */
 /* ***************************************************************************** */
 
-.dev {
-    width: 100%;
-    padding: 7% 0;
-    background-color: #404040;
-}
+.dev { background-color: #404040; }
 
 .dev-header {
     color: white;
-    font-size: 35px;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    max-width: 50%;
-    margin: 0 25%;
-    
-    /* Divider or the bottom border under the header of the section*/
-    border-bottom: solid 4px #CC0000;
+    max-width: 60vw;
+    margin: 0 20vw;
+    border-bottom: solid 4px #CC0000; /* Divider or the bottom border under the header of the section*/
 }
 
-.dev-content {
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    max-width: 80%;
-    margin: 0 10% 2%;
-}
+.dev-content { color: white; }
 
 .dev-images {
     max-width: 90%;
-    margin: 0 5%;
+    margin: 5vh 5vw 0;
 }
 
 .dev-icon {
@@ -320,21 +277,18 @@ a:active {
     margin: 0 2%;
 }
 
-@media (min-width:; 600px) {
-    .dev-header {
-        font-size: 35px;
+@media (max-width: 1000px) {
+    .header {
+        max-width: 40vw;
+        margin: 0 30vw;
     }
 }
 
 /* ******** Experience ******** */
-#experience {
-
-}
+#experience {}
 
 /* ******** Photography ******** */
-.photo {
-
-}
+#photo {}
 
 /* ******** Footer ******** */
 
