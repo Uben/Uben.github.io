@@ -237,16 +237,27 @@ a:active    { color: grey; }    /* selected link   */
 /* ***************************************************************************** */
 #footer {
     color: black;
-    background-color: whitesmoke;
-    padding: 7.5vh 0;
+    /*background-color: whitesmoke;*/
+    padding: 20vh 0;
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
 .footer-icon {
     margin: 0 .65rem;
     max-width: 1.6rem;
+    cursor: pointer;
 }
 
 .footer-text {
+    color: white;
     font-size: .65rem;
     font-weight: 900;
     letter-spacing: 0.1rem;
