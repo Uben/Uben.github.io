@@ -7,7 +7,7 @@ font-family: 'Work Sans', sans-serif;
 
 
 /* ***************************************************************************** */
-/* ******** General ******** */
+/* **********************************  General ********************************* */
 /* ***************************************************************************** */
 
 html {
@@ -25,7 +25,6 @@ a:hover     { color: red; }     /* mouse over link */
 a:active    { color: grey; }    /* selected link   */
 
 
-
 /* ***************************************************************************** */
 /* ************************************* Universal ***************************** */
 /* ***************************************************************************** */
@@ -36,6 +35,8 @@ a:active    { color: grey; }    /* selected link   */
 }
 
 .header {
+    max-width: 500px;
+    margin: 0 auto;
     font-size: 1.25rem;
     font-weight: 900;
     letter-spacing: 0.2vw;
@@ -44,16 +45,20 @@ a:active    { color: grey; }    /* selected link   */
 }
 
 @media (max-width: 375px){
-    .header {
-        font-size: 1rem;
-    }
+    .header { font-size: 1rem; }
+}
+
+@media (max-width: 750px){
+    .dev-header { max-width: 60vw; }
 }
 
 @media (max-width: 1000px) {
-    .header {
-        max-width: 20vw;
-        margin: 32.5vw;
+
+    .about-header {
+        max-width: 40vw;
+        margin: 0 30vw 5vh;
     }
+    .dev-header {}
 }
 
 .content {
@@ -74,13 +79,10 @@ a:active    { color: grey; }    /* selected link   */
 }
 
 
-
 /* ***************************************************************************** */
 /* ******************************** Navbar ************************************* */
 /* ***************************************************************************** */
 .navbar { margin-bottom: 0px; } /* Nav to stick to top of .intro section */
-
-
 
 
 /* ***************************************************************************** */
@@ -135,20 +137,12 @@ a:active    { color: grey; }    /* selected link   */
 }
 
 
-
-
 /* *********************************************************************** */
 /* ******************************** ABOUT ******************************** */
 /* *********************************************************************** */
 
 .about { background-color: whitesmoke; }
-
-.about-header {
-    max-width: 40vw;
-    margin: 0 30vw 5vh;
-    border-bottom: solid 4px #CC0000; /* Divider or the bottom border under the header of the section*/
-}
-
+.about-header { border-bottom: solid 4px #CC0000; } /* Divider or the bottom border under the header of the section*/
 .about-content {}
 
 /*  USES .DIV-CENTER TO CENTER IMAGES PAGE. ITS CRITICAL!!! */
@@ -160,11 +154,8 @@ a:active    { color: grey; }    /* selected link   */
 
 .about-icon {
     max-width: 11vw;
-    /*max-height: auto;*/
     margin: 0 6.5vw;
 }
-
-
 
 
 /* ***************************************************************************** */
@@ -172,16 +163,12 @@ a:active    { color: grey; }    /* selected link   */
 /* ***************************************************************************** */
 
 .dev { background-color: #404040; }
-
 .dev-header {
-    color: white;
-    max-width: 60vw;
-    margin: 0 20vw;
+    color: white; /* max-width: 60vw;margin: 0 20vw; */
     border-bottom: solid 4px #CC0000; /* Divider or the bottom border under the header of the section*/
 }
 
 .dev-content { color: white; }
-
 .dev-images {
     max-width: 90%;
     margin: 5vh 5vw 0;
@@ -193,35 +180,11 @@ a:active    { color: grey; }    /* selected link   */
     margin: 0 3vw;
 }
 
-@media (max-width: 1000px) {
-    .about-header {
-        max-width: 45vw;
-        margin: 0 27.5vw;
-    }
-
-    .dev-header {
-        max-width: 60vw;
-        margin: 0 20vw;
-    }
-}
-
-@media (max-width: 375px){
-    .dev-header {
-        max-width: 76vw;
-        margin: 12vw;
-    }
-}
-
-
-
 
 /* ***************************************************************************** */
 /* ********************************* Experience ******************************** */
 /* ***************************************************************************** */
 #experience {}
-
-
-
 
 
 /* ***************************************************************************** */
@@ -230,14 +193,14 @@ a:active    { color: grey; }    /* selected link   */
 #photo {}
 
 
-
-
 /* ***************************************************************************** */
 /* *********************************** Footer ********************************** */
 /* ***************************************************************************** */
 #footer {
     color: white;
     padding: 13vh 0;
+
+    /* enables parallax scrolling */
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
@@ -246,7 +209,7 @@ a:active    { color: grey; }    /* selected link   */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    /* end parallax code */
 }
 
 .footer-icon {
