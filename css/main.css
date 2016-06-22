@@ -18,7 +18,7 @@ html {
 }
 
 body        { margin: 0px; }
-a           { text-decoration: none; }
+a           { text-decoration: none; cursor: pointer; }
 a:link      { color: #CC0000; } /* unvisited link  */
 a:visited   { color: red; }     /* visited link    */
 a:hover     { color: red; }     /* mouse over link */
@@ -236,9 +236,8 @@ a:active    { color: grey; }    /* selected link   */
 /* *********************************** Footer ********************************** */
 /* ***************************************************************************** */
 #footer {
-    color: black;
-    /*background-color: whitesmoke;*/
-    padding: 20vh 0;
+    color: white;
+    padding: 13vh 0;
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
     background-image: -ms-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/nyc.jpg");
@@ -257,7 +256,6 @@ a:active    { color: grey; }    /* selected link   */
 }
 
 .footer-text {
-    color: white;
     font-size: .65rem;
     font-weight: 900;
     letter-spacing: 0.1rem;
