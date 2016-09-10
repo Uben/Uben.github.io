@@ -1,0 +1,170 @@
+@import 'https://fonts.googleapis.com/css?family=Heebo:700|Open+Sans:400&subset=latin-ext';
+
+a {
+	color: black;
+	text-decoration: none;
+	
+	webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+a:hover {
+	color: #a3876d !important; 
+	webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: white;
+	font: normal 12px 'Open Sans', Helvetica, sans-serif;
+}
+
+nav {
+	position: fixed;
+	top: 50px;
+	left: 65px;
+	
+	display: inline-flex;
+	flex-flow: column;
+	justify-content: space-between;
+	
+	height: calc(100vh - 100px);
+	width: 200px;
+}
+
+nav a.logo {
+	font: 700 40px "Heebo", "Open Sans", Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	letter-spacing: -2px;
+}
+
+.gold-dot {	color: #a3876d; }
+
+nav a.nav-li {
+	display: block;
+	margin-top: 20px;
+	font: 700 25px "Heebo", Helvetica, sans-serif;
+	color: grey;
+	letter-spacing: -1px;
+	text-decoration: none;
+	cursor: not-allowed;
+}
+
+nav .nav-li:hover { color: grey !important; }
+
+footer {
+	display: block;
+	font: 700 13px "Heebo", "Open Sans", Helvetica, sans-serif;
+	letter-spacing: .01rem;
+	color: black;
+}
+
+footer img {
+	margin-right: 20px;
+	height: 25px;
+	cursor: pointer;
+}
+
+footer p.copyright {
+	font-size: 15px;
+	letter-spacing: .01rem;
+	cursor: default;
+}
+
+a.current {
+	position: absolute;
+	bottom: 50px;
+	right: 60px;
+
+	color: grey;
+	font-size: 13px;
+	font-weight: 700;
+	font-family: "Heebo";
+	text-decoration: none;
+}
+
+body { 
+	display: block;
+	width:  calc(100vw - 60px);
+	height: calc(100vh - 60px);
+	margin: 25px;
+	border: 5px solid rgba(150, 150, 150, .2);
+	z-index: 1;
+	background: none;
+}
+
+body header {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width:  calc(100vw - 60px);
+	height: calc(100vh - 60px);
+	cursor: default;
+}
+
+body .head-main {
+	font: 700 125px "Heebo", "Open Sans", Helvetica, sans-serif;
+	letter-spacing: -7px;
+	text-transform: uppercase;
+}
+
+body .head-desc {
+	font: 400 23px "Open Sans", Helvetica, sans-serif;
+	color: grey;
+  text-transform: uppercase;
+}
+
+body .desc-one {
+	margin-bottom: -10px;
+	letter-spacing: .03rem;
+}
+
+body .desc-two {
+	margin-top: -20px;
+	letter-spacing: .03rem;
+}
+
+/* SPECIAL SITE STYLES */
+
+/* FOR PARTICLE CIRCLE ON HOMEPAGE */
+canvas {
+	position: absolute;
+	right: 60px;
+	top: 60px;
+	width: 80vw;
+	height: 80vh;
+	z-index: -1;
+}
+
+/* This is for the color when you highlight something on page */
+*::selection { background: rgba(163, 135, 109, .6); }
+*::-moz-selection { background: rgba(163, 135, 109, .6); }
+
+
+
+
+
+
+/* Test after line */
+/* :after {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-color: #a3876d;
+    margin: 10px auto 0;
+}
+ */
