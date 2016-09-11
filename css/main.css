@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Heebo:700|Open+Sans:400&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Heebo:700|Raleway:400,700';
 
 a {
 	color: black;
@@ -27,25 +27,26 @@ p {
 
 html {
 	background: white;
-	font: normal 12px 'Open Sans', Helvetica, sans-serif;
+	font: normal 12px 'Raleway', Helvetica, sans-serif;
 }
 
 nav {
 	position: fixed;
-	top: 50px;
-	left: 65px;
-	z-index: 1000;
-	
-	display: inline-flex;
-	flex-flow: column;
-	justify-content: space-between;
-	
-	height: calc(100vh - 100px);
-	width: 200px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    height: calc(100vh - 100px);
+    width: 400px;
+    padding: 50px 60px;
 }
 
 nav a.logo {
-	font: 700 55px "Heebo", "Open Sans", Helvetica, sans-serif;
+	font: 700 55px "Heebo", "Raleway", Helvetica, sans-serif;
 	color: black;
 	text-decoration: none;
 	letter-spacing: -2px;
@@ -114,7 +115,7 @@ nav .nav-li:hover:after {
 /* Controls the animation length of the underline extension animation */
 nav .nav-li:first-child:hover:after  { width: 65px; }
 nav .nav-li:nth-child(2):hover:after { width: 96px; }
-nav .nav-li:nth-child(3):hover:after { width: 120px; }
+nav .nav-li:nth-child(3):hover:after { width: 119px; }
 nav .nav-li:last-child:hover:after 	 { width: 83px; }
 
 
@@ -126,7 +127,7 @@ nav .nav-li:first-child { margin: -30px 0 0; }
 
 footer {
 	display: block;
-	font: 700 13px "Heebo", "Open Sans", Helvetica, sans-serif;
+	font: 700 13px "Heebo", Helvetica, sans-serif;
 	letter-spacing: .01rem;
 	color: black;
 }
@@ -147,22 +148,22 @@ footer a div {
     -o-transform: translate(0, 0); 
     -moz-transform: translate(0, 0);
 
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out; 
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 footer a div:hover {
-    transform: translate(0,-5px);
-    -webkit-transform: translate(0,-5px);
-    -o-transform: translate(0,-5px); 
-    -moz-transform: translate(0,-5px);
+    transform: translate(0,-3px);
+    -webkit-transform: translate(0,-3px);
+    -o-transform: translate(0,-3px); 
+    -moz-transform: translate(0,-3px);
 
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 footer .twitter-icon { background-image: url('../img/icons/black-social/twitter.png'); }
@@ -179,21 +180,8 @@ footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.p
 footer p.copyright {
 	font-size: 14px;
 	text-transform: uppercase;
-	color: rgba(163, 135, 109, .75);/* standard gold color */
 	cursor: default;
-
-	transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-}
-footer:hover p.copyright {
 	color: #a3876d;
-
-	transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
 }
 
 
@@ -219,26 +207,20 @@ body header {
 }
 
 body .head-main {
-	font: 700 7.5vw "Heebo", "Open Sans", Helvetica, sans-serif; /* prev: 125px */
+	font: 700 7.5vw "Heebo", Helvetica, sans-serif; /* prev: 125px */
 	letter-spacing: -7px;
 	text-transform: uppercase;
 }
 
 body .head-desc {
-	font: 400 23px "Open Sans", Helvetica, sans-serif;
+	font: 400 27px "Raleway", Helvetica, sans-serif;
 	color: grey;
   	text-transform: uppercase;
+  	letter-spacing: .14rem;
 }
 
-body .desc-one {
-	margin-bottom: -10px;
-	letter-spacing: .03rem;
-}
-
-body .desc-two {
-	margin-top: -20px;
-	letter-spacing: .03rem;
-}
+body .desc-one { margin-bottom: -10px; }
+body .desc-two { margin-top: -20px; }
 
 body .line-container {
 	position: absolute;
@@ -262,7 +244,8 @@ body .line-container .scroll-text {
 
     color: black;
     text-align: center;
-    letter-spacing: 2px;
+    font-family: "Raleway" !important;
+    letter-spacing: 3px;
     text-transform: uppercase;
 
     transition: all .5s ease-in-out;
@@ -286,20 +269,20 @@ body .line-container .down-line {
     border-left: 1px solid black;
     margin: 0 auto;
 
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 body .line-container:hover .down-line { 
-	height: 50px;
+	height: 45px;
     border-color: #a3876d;
 
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 body a.current {
@@ -322,7 +305,7 @@ body a.current:hover { color: black !important; }
 body a.current:after {
     content: '';
     display: block;
-    width: 30px;
+    width: 20px;
     height: 2px;
     margin: -5px 0 0 1px;
     background-color: #a3876d;
@@ -334,8 +317,9 @@ body a.current:after {
 }
 
 body a.current:hover:after {
-	width: 237px; /* prev: 315px; */
+	width: 236px; /* prev: 315px; */
 	letter-spacing: 2px;
+
 	transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -344,6 +328,10 @@ body a.current:hover:after {
 
 body a.current .gold-dot { font-size: 20px; }
 body a.current:hover .gold-dot { color: grey; }
+
+
+
+
 
 /* SPECIAL SITE STYLES */
 
