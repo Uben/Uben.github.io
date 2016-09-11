@@ -64,6 +64,7 @@ nav a.nav-li {
 }
 
 nav .nav-li:hover { color: grey !important; }
+nav .nav-li:first-child { margin: -30px 0 0; }
 
 footer {
 	display: block;
@@ -147,7 +148,7 @@ body header {
 }
 
 body .head-main {
-	font: 700 125px "Heebo", "Open Sans", Helvetica, sans-serif;
+	font: 700 7.5vw "Heebo", "Open Sans", Helvetica, sans-serif; /* prev: 125px */
 	letter-spacing: -7px;
 	text-transform: uppercase;
 }
