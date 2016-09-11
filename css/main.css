@@ -1,0 +1,274 @@
+@import 'https://fonts.googleapis.com/css?family=Heebo:700|Open+Sans:400&subset=latin-ext';
+
+a {
+	color: black;
+	text-decoration: none;
+	
+	webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+a:hover {
+	color: #a3876d !important; 
+	webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: white;
+	font: normal 12px 'Open Sans', Helvetica, sans-serif;
+}
+
+nav {
+	position: fixed;
+	top: 50px;
+	left: 65px;
+	z-index: 1000;
+	
+	display: inline-flex;
+	flex-flow: column;
+	justify-content: space-between;
+	
+	height: calc(100vh - 100px);
+	width: 200px;
+}
+
+nav a.logo {
+	font: 700 55px "Heebo", "Open Sans", Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	letter-spacing: -2px;
+}
+
+.gold-dot {	color: #a3876d; }
+
+nav a.nav-li {
+	display: block;
+	margin-top: 20px;
+	font: 700 25px "Heebo", Helvetica, sans-serif;
+	color: grey;
+	letter-spacing: -1px;
+	text-decoration: none;
+	cursor: not-allowed;
+}
+
+nav .nav-li:hover { color: grey !important; }
+
+footer {
+	display: block;
+	font: 700 13px "Heebo", "Open Sans", Helvetica, sans-serif;
+	letter-spacing: .01rem;
+	color: black;
+}
+
+footer a div {
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	margin: 0 15px 0 0;
+	cursor: pointer;
+
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -o-transform: translate(0, 0); 
+    -moz-transform: translate(0, 0);
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out; 
+}
+
+footer a div:hover {
+    transform: translate(0,-5px);
+    -webkit-transform: translate(0,-5px);
+    -o-transform: translate(0,-5px); 
+    -moz-transform: translate(0,-5px);
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+footer .twitter-icon { background-image: url('../img/icons/black-social/twitter.png'); }
+footer .ig-icon { background-image: url('../img/icons/black-social/instagram.png'); }
+footer .git-icon { background-image: url('../img/icons/black-social/github.png'); }
+footer .mail-icon { background-image: url('../img/icons/black-social//mail.png'); }
+
+footer .twitter-icon:hover { background-image: url('../img/icons/gold-social/twitter.png'); }
+footer .ig-icon:hover { background-image: url('../img/icons/gold-social/instagram.png'); }
+footer .git-icon:hover { background-image: url('../img/icons/gold-social/github.png'); }
+footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.png'); }
+
+
+footer p.copyright {
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: default;
+}
+
+
+
+body { 
+	display: block;
+	width:  calc(100vw - 60px);
+	height: calc(100vh - 60px);
+	margin: 25px;
+	border: 5px solid rgba(150, 150, 150, .2);
+	z-index: 1;
+	background: none;
+	overflow: hidden;
+}
+
+body header {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width:  calc(100vw - 60px);
+	height: calc(100vh - 60px);
+	cursor: default;
+}
+
+body .head-main {
+	font: 700 125px "Heebo", "Open Sans", Helvetica, sans-serif;
+	letter-spacing: -7px;
+	text-transform: uppercase;
+}
+
+body .head-desc {
+	font: 400 23px "Open Sans", Helvetica, sans-serif;
+	color: grey;
+  	text-transform: uppercase;
+}
+
+body .desc-one {
+	margin-bottom: -10px;
+	letter-spacing: .03rem;
+}
+
+body .desc-two {
+	margin-top: -20px;
+	letter-spacing: .03rem;
+}
+
+body .line-container {
+	position: absolute;
+    min-height: 30px;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0 35%;
+}
+
+body .line-container .scroll-text {
+	height: 20px;
+	min-width: 85px;
+    margin: 0 auto;
+    cursor: not-allowed;
+
+    color: black;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out; 
+}
+
+body .line-container:hover .scroll-text { 
+	color: #a3876d;
+
+	transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out; 
+}
+
+body .line-container .down-line {
+	width: 1px;
+    height: 60px;
+    border-left: 1px solid black;
+    margin: 0 auto;
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+body .line-container:hover .down-line { 
+	height: 50px;
+    border-color: #a3876d;
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+body a.current {
+	position: absolute;
+	bottom: 50px;
+	right: 60px;
+	z-index: 200;
+
+	color: grey;
+	font-size: 12px;
+	font-weight: 700;
+	font-family: "Heebo";
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+/* SPECIAL SITE STYLES */
+
+/* FOR PARTICLE CIRCLE ON HOMEPAGE */
+canvas {
+	position: absolute;
+    right: -10%;
+    top: 0%;
+    width: 90vw;
+    height: 90vh;
+    z-index: -1;
+}
+
+/* This is for the color when you highlight something on page */
+*::selection { background: rgba(163, 135, 109, .6); }
+*::-moz-selection { background: rgba(163, 135, 109, .6); }
+
+
+/* Test after line */
+/* :after {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-color: #a3876d;
+    margin: 10px auto 0;
+}
+ */

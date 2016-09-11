@@ -24,8 +24,8 @@
         <title>Uben | Software Developer</title>
         <link rel="shortcut icon" href="img/logo.png">
     
-	    <link rel="stylesheet" href="css/normalize.css">
-	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="css/lib/normalize.css">
+	    <link rel="stylesheet" href="css/main.css">
 
 		<nav>
 			<a class="logo" href="http://berninuben.com/">uben<span class="gold-dot">.<span></a>
@@ -39,19 +39,17 @@
 
 			<footer>
 				<div>
-					<a href="https://twitter.com/BerninAUS" target="blank">
-						<img src="img/icons/twitter.png"/></a>
-					<a href="https://www.instagram.com/berninuben/" target="blank">
-						<img src="img/icons/instagram.png"/></a>
-					<a href="https://github.com/Uben" target="blank">
-						<img src="img/icons/github.png"/></a>
-					<a href="mailto:berninuben@gmail.com">
-						<img src="img/icons/mail.png"/></a>
+					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social twitter-icon"></div> </a>
+					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social ig-icon"></div> </a>
+					<a href="https://github.com/Uben" target="blank"> <div class="social git-icon"></div> </a>
+					<a href="mailto:berninuben@gmail.com"> <div class="social mail-icon"></div> </a>
 				</div>
-				<p class="copyright">&copy; 2016 BERNIN A. UBEN</p>
+				<p class="copyright">&copy; 2016 bernin a. uben</p>
 			</footer>
 		</nav>
   	</head>
+
+
 
   	<body>
 		<canvas id="nCanvasRender"></canvas>
@@ -62,14 +60,20 @@
 			<p class="desc-two head-desc">software developer</p>
 		</header>
 
-		<a class="current" href="http://twowords.co/" target="blank">CURRENTLY :: DEVELOPER INTERN @TWOWORDS</a>
+		<div class="line-container">
+			<div class="scroll-text">scroll</div>
+			<div class="down-line"></div>
+		</div>
+			
+		<a class="current" href="http://twowords.co/" target="blank">developer intern @twowords</a>
 	</body>
 
 
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js'></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js'></script>
+	<script src='js/lib/jquery-3.1.0.min.js'></script>
+	<script src='js/lib/dat-gui-v2.min.js'></script>
+	<script src='js/lib/stats.min.js'></script>
 
 	<script src="js/index.js"></script>
+	<script src="js/canvas.js"></script>
   </body>
 </html>
