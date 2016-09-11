@@ -51,11 +51,36 @@ nav a.logo {
 	letter-spacing: -2px;
 }
 
+nav a.logo:hover { color: black !important; }
+
+nav a.logo:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: -20px 0 0 3px;
+    background-color: #a3876d;
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+nav a.logo:hover:after {
+	width: 123px;
+	letter-spacing: 2px;
+	transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+}
+
 .gold-dot {	color: #a3876d; }
 
 nav a.nav-li {
 	display: block;
-	margin-top: 20px;
+	margin-top: 40px;
 	font: 700 25px "Heebo", Helvetica, sans-serif;
 	color: grey;
 	letter-spacing: -1px;
@@ -63,7 +88,40 @@ nav a.nav-li {
 	cursor: not-allowed;
 }
 
-nav .nav-li:hover { color: grey !important; }
+
+nav .nav-li:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: -7px 0 0;
+    background-color: #a3876d;
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+nav .nav-li:hover:after {
+	transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+}
+
+
+/* Controls the animation length of the underline extension animation */
+nav .nav-li:first-child:hover:after  { width: 65px; }
+nav .nav-li:nth-child(2):hover:after { width: 96px; }
+nav .nav-li:nth-child(3):hover:after { width: 120px; }
+nav .nav-li:last-child:hover:after 	 { width: 83px; }
+
+
+/* Overrides the gold hover animation to black */
+nav .nav-li:hover { color: black !important; }
+
+/* Used to make the section seem more centered in accordance with main text hero on index.html */
 nav .nav-li:first-child { margin: -30px 0 0; }
 
 footer {
@@ -121,9 +179,22 @@ footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.p
 footer p.copyright {
 	font-size: 14px;
 	text-transform: uppercase;
+	color: rgba(163, 135, 109, .75);/* standard gold color */
 	cursor: default;
-}
 
+	transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+footer:hover p.copyright {
+	color: #a3876d;
+
+	transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
 
 
 body { 
@@ -245,6 +316,34 @@ body a.current {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
+
+body a.current:hover { color: black !important; }
+
+body a.current:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: -5px 0 0 1px;
+    background-color: #a3876d;
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+body a.current:hover:after {
+	width: 237px; /* prev: 315px; */
+	letter-spacing: 2px;
+	transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+body a.current .gold-dot { font-size: 20px; }
+body a.current:hover .gold-dot { color: grey; }
 
 /* SPECIAL SITE STYLES */
 
