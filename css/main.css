@@ -248,7 +248,7 @@ body a.current {
 /* SPECIAL SITE STYLES */
 
 /* FOR PARTICLE CIRCLE ON HOMEPAGE */
-canvas {
+body canvas {
 	position: absolute;
     right: -10%;
     top: 0%;
