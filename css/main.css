@@ -31,7 +31,7 @@ html {
 }
 
 #wrapper {
-    width: calc(100vw - 400px);
+    width: calc(100vw - 325px);
     height: calc(100vh - 60px);
     display: inline-block;
     position: absolute;
@@ -84,7 +84,7 @@ nav {
     justify-content: space-between;
 
     height: calc(100vh - 100px);
-    width: 400px;
+    width: 175px;
     padding: 50px 60px;
 }
 
@@ -93,6 +93,9 @@ nav a.logo {
 	color: black;
 	text-decoration: none;
 	letter-spacing: -2px;
+
+    /* Allows future */
+    width: calc(100vw - 90px);
 }
 
 nav a.logo:hover { color: black !important; }

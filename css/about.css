@@ -1,13 +1,85 @@
 
-.about {
+.about { background-color: #FCFCFC; }
 
+/* Set base for fonts on this page */
+.about p { font: 300 12px "Raleway", Helvetica, sans-serif; }
+
+.about h1.page-title {
+	padding: 37px 30px 15px 0;
+	margin: 0;
+    /*background: white;*/
+
+    font: 700 40px "Heebo", "Raleway", Helvetica, sans-serif;
+    color: black;
+    text-align: right;
+    text-decoration: none;
+    letter-spacing: -3px;
 }
 
-.about h1 {
-	margin: 37px 30px 0 0;
-    font-size: 40px;
-    font-weight: 300;
-    font-family: Heebo;
-    letter-spacing: -1px;
-    text-align: right;
+.about div.about-header {
+	height: 325px; /* 400px */
+	background: url('../img/header/circle.jpeg');
+	background-position: center center;
+	background-size: cover;
+}
+
+/* Margin top in here dictates how far in the h2 title goes into the header */
+.about div.about-summary {
+	margin: 0 10%;
+	background: white;
+	/*background-color: rgba(163, 135, 109, .8);*/
+}
+
+.about h2.header-text {
+    font: 700 45px "Heebo", Helvetica, sans-serif;
+    letter-spacing: -2px;
+    background-color: white;
+    height: 60px;
+    margin: -60px 10% 0;
+    padding: 10px 40px 0;
+}
+
+/*.about h2.header-text {
+    font: 700 45px "Heebo", Helvetica, sans-serif;
+    letter-spacing: -2px;
+    background-color: white;
+    height: 60px;
+    margin: -125px 10% 0;
+    padding: 10px 40px 0;
+}*/
+
+.about div.about-general {
+	margin: 0;
+	padding: 40px;
+}
+
+.about div.about-general div { display: inline-block; }
+.about div.about-general div:last-child { margin-left: 20px; }
+
+.about div.about-general p {
+	font-size: 17px;
+	margin: 10px 0 0;
+}
+
+.about div.about-general div:first-child p {
+	font-weight: 700;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+}
+
+.about div.about-general div:last-child p { color: #a3876d; }
+
+/*.about div.about-general span.about-quote {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 10%; 0;
+	color: #a3876d;
+}*/
+
+.about p.main-text {
+	margin: 0;
+    padding: 0 40px 100px;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0;
 }
