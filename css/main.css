@@ -239,11 +239,8 @@ body {
 	overflow: hidden;
 }
 
+/* For the grey outline */
 body header {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
 	width:  calc(100vw - 60px);
 	height: calc(100vh - 60px);
 
@@ -253,6 +250,22 @@ body header {
     bottom: 30px;
     right: 30px;
 	cursor: default;
+}
+
+body section.site-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width:  calc(100vw - 60px);
+    height: calc(100vh - 60px);
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    cursor: default;
 }
 
 body .head-main {
