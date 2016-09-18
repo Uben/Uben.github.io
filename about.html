@@ -23,10 +23,16 @@
 
         <title>About Me | Bernin A. Uben</title>
         <link rel="shortcut icon" href="img/logo.png">
-    
+    	
+    	
+	    
+
 	    <link rel="stylesheet" href="css/lib/normalize.css">
 	    <link rel="stylesheet" href="css/main.css">
 	    <link rel="stylesheet" href="css/about.css">
+		
+		<!-- Put this up here because its supposed to load in before html -->
+	    <script src="js/load-screen.js"></script>
 
 		<nav>
 			<!-- <a class="logo" href="http://berninuben.com/">uben<span class="gold-dot">.<span></a> -->
@@ -50,6 +56,9 @@
 				<p class="copyright">&copy; 2016 BERNIN A. UBEN</p>
 			</footer>
 		</nav>
+		
+		<!-- This is for the loading screen animation -->
+		<section id="load" class="load"><p class="load-logo logo">uben<span class="gold-dot">.<span></p></section>
   	</head>
 
   	<body>
@@ -100,6 +109,7 @@
 	</body>
 
 	<script src='js/lib/jquery-3.1.0.min.js'></script>
+	<script src="js/main.js"></script>
 	<!-- <script src="js/about.js"></script> -->
 	
   </body>

@@ -23,7 +23,8 @@
 
         <title>Uben | Software Developer</title>
         <link rel="shortcut icon" href="img/logo.png">
-    
+
+	    <!-- Regular CSS Files -->
 	    <link rel="stylesheet" href="css/lib/normalize.css">
 	    <link rel="stylesheet" href="css/main.css">
 
@@ -49,12 +50,14 @@
 				<p class="copyright">&copy; 2016 BERNIN A. UBEN</p>
 			</footer>
 		</nav>
+
+		<!-- This is for the loading screen animation -->
+		<section id="load" class="load"><p class="load-logo logo">uben<span class="gold-dot">.<span></p></section>
   	</head>
-
-
 
   	<body>
 		<canvas id="nCanvasRender"></canvas>
+		<!-- Grey Square Site Outline -->
 		<header></header>
 
 		<section class="site-header">
@@ -83,12 +86,13 @@
 	        strings: ["Computer Science Student", "Rubyist", "Software Developer" ],
 	        typeSpeed: 50,
 	        backSpeed: 0,
-	        startDelay: 500,
+	        startDelay: 1000,
 	        backDelay: 1000
 	      });
 	  });
 	</script>
 
+	<script src="js/main.js"></script>
 	<script src="js/index.js"></script>
 	
   </body>
