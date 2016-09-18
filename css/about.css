@@ -5,9 +5,9 @@
 .about p { font: 300 12px "Raleway", Helvetica, sans-serif; }
 
 .about h1.page-title {
-	padding: 37px 30px 15px 0;
-	margin: 0;
-    /*background: white;*/
+	padding: 34px 30px 5px 0;
+    margin: 0;
+    /* background: white; */
 
     font: 700 40px "Heebo", "Raleway", Helvetica, sans-serif;
     color: black;
@@ -17,7 +17,7 @@
 }
 
 .about div.about-header {
-	height: 325px; /* 400px */
+	height: 35vh; /* 400px */
 	background: url('../img/header/circle.jpeg');
 	background-position: center center;
 	background-size: cover;
@@ -31,11 +31,11 @@
 }
 
 .about h2.header-text {
-    font: 700 45px "Heebo", Helvetica, sans-serif;
+	font: 700 45px "Heebo", Helvetica, sans-serif;
     letter-spacing: -2px;
     background-color: white;
     height: 60px;
-    margin: -60px 10% 0;
+    margin: -7.5vh 10% 0;
     padding: 10px 40px 0;
 }
 
@@ -44,7 +44,7 @@
     letter-spacing: -2px;
     background-color: white;
     height: 60px;
-    margin: -125px 10% 0;
+    margin: -12vh 10% 0;
     padding: 10px 40px 0;
 }*/
 
