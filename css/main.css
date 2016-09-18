@@ -105,7 +105,7 @@ nav a.logo:after {
     display: block;
     width: 0;
     height: 2px;
-    margin: -20px 0 0 3px;
+    margin: -20px 0 0 10px;
     background-color: #a3876d;
 
     transition: all .5s ease-in-out;
@@ -115,7 +115,8 @@ nav a.logo:after {
 }
 
 nav a.logo:hover:after {
-	width: 123px;
+    margin-left: 19px;
+	width: 153px;
 	letter-spacing: 2px;
 	transition: all .15s ease-in-out;
     -webkit-transition: all .15s ease-in-out;
@@ -124,6 +125,12 @@ nav a.logo:hover:after {
 }
 
 .gold-dot {	color: #a3876d; }
+
+nav a.logo img {
+    width: 175px;
+    height: auto;
+    margin-top: 10px;
+}
 
 nav a.nav-li {
 	display: block;
@@ -134,6 +141,8 @@ nav a.nav-li {
 	text-decoration: none;
 	cursor: not-allowed;
 }
+
+nav a.nav-li:first-child { cursor: pointer; }
 
 
 nav .nav-li:after {
