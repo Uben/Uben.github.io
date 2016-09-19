@@ -145,7 +145,7 @@ nav a.li-last:last-child:hover:after 	 { width: 83px; }
 nav .nav-li:hover { color: black !important; }
 
 /* Used to make the section seem more centered in accordance with main text hero on index.html */
-nav .nav-li:first-child { margin: -30px 0 0; }
+nav .nav-li:first-child { margin: -70px 0 0; }
 
 footer {
 	display: block;
@@ -465,11 +465,17 @@ body canvas {
     bottom: 0;
     background: white;
     z-index: 9999;
+
+    /*
+        Greys:
+        #808080
+
+    */
 }
 
 #load p.logo {
     font: 700 175px "Heebo", "Raleway", Helvetica, sans-serif;
-    color: black;
+    color: #525252;
     text-decoration: none;
     letter-spacing: -8px;
     height: 96vh;

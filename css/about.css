@@ -2,7 +2,7 @@
 .about { background-color: #FCFCFC; }
 
 /* Set base for fonts on this page */
-.about p { font: 300 12px "Raleway", Helvetica, sans-serif; }
+.about p { font: 300 15px "PT Mono", monospace; }
 
 .about h1.page-title {
 	padding: 34px 30px 5px 0;
@@ -50,7 +50,7 @@
 
 .about div.about-general {
 	margin: 0;
-	padding: 40px;
+    padding: 30px 40px 15px;
 }
 
 .about div.about-general div { display: inline-block; }
@@ -62,12 +62,16 @@
 }
 
 .about div.about-general div:first-child p {
-	font-weight: 700;
-	text-transform: lowercase;
+	font: 700 20px 'Heebo', Helvetica, sans-serif;
+    text-transform: lowercase;
 	letter-spacing: -1px;
+    margin-top: 2px;
 }
 
-.about div.about-general div:last-child p { color: #a3876d; }
+.about div.about-general div:last-child p { 
+    color: #a3876d;
+    margin-top: 13px;
+}
 
 /*.about div.about-general span.about-quote {
 	display: inline-block;
@@ -77,9 +81,19 @@
 }*/
 
 .about p.main-text {
-	margin: 0;
-    padding: 0 40px 100px;
-    font-size: 20px;
-    line-height: 35px;
+    margin: 0;
+    padding: 0 40px 20px;
+    line-height: 25px;
     letter-spacing: 0;
+    width: 820px;
+    color: #333333;
+}
+
+@media ( max-width: 1425px) {
+    .about p.main-text { width: calc(100% - 80px); }
+}
+
+.about p.main-text a {
+    border-bottom: 1px dotted #a3876d;
+    cursor: pointer;
 }
