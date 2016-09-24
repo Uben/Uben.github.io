@@ -7,50 +7,50 @@
 
 
 	nav {
-		 position: fixed;
-		 top: 0;
-		 left: 0;
-		 z-index: 1000;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
 
-		 display: inline-flex;
-		 flex-flow: column;
-		 justify-content: space-between;
+		display: inline-flex;
+		flex-flow: column;
+		justify-content: space-between;
 
-		 height: calc(100vh - 100px);
-		 width: 175px;
-		 padding: 50px 60px;
+		height: calc(100vh - 100px);
+		width: 175px;
+		padding: 50px 60px;
 	}
 
  	nav a.nav-brand:after {
-		 content: '';
-		 display: block;
-		 width: 0;
-		 height: 2px;
-		 margin: -20px 0 0 10px;
-		 background-color: #a3876d;
+		content: '';
+		display: block;
+		width: 0;
+		height: 2px;
+		margin: 0 0 0 10px;
+		background-color: #a3876d;
 
-		 transition: all .5s ease-in-out;
-		 -webkit-transition: all .5s ease-in-out;
-		 -moz-transition: all .5s ease-in-out;
-		 -o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
 	}
 
 	nav a.nav-brand:hover:after {
-		 margin-left: 19px;
+		margin-left: 19px;
 		width: 153px;
 		letter-spacing: 2px;
 		transition: all .15s ease-in-out;
-		 -webkit-transition: all .15s ease-in-out;
-		 -moz-transition: all .15s ease-in-out;
-		 -o-transition: all .15s ease-in-out;
+		-webkit-transition: all .15s ease-in-out;
+		-moz-transition: all .15s ease-in-out;
+		-o-transition: all .15s ease-in-out;
 	} 
 
 	.gold-dot {	color: #a3876d; }
 
 	nav .nav-brand img {
-		 width: 175px;
-		 height: auto;
-		 margin-top: 10px;
+		width: 175px;
+		height: auto;
+		margin-top: 10px;
 	}
 	
 	nav > div { display: block !important; }
@@ -211,8 +211,8 @@
 	}
 
 	.bar:before { width: 30px; }
-	.bar  		{ width: 25px; }
-	.bar:after 	{ width: 20px; }
+	.bar  		{ width: 15px; }
+	.bar:after 	{ width: 22px; }
 
 	.bar {
 		position: relative;
@@ -352,4 +352,26 @@
 	  -o-animation:      slideDownIn 1s; /* Opera 12+ */
 	  animation:         slideDownIn 1s; /* IE 10+, Fx 29+ */
 	}
+}
+
+
+@media (max-width: 500px){
+	body { overflow: visible; }
+
+	nav { 
+		position: fixed;
+		width: 100vw;
+		height: 70px;
+		background: white;
+	}
+
+	nav a > img { height: 42px; }
+
+	.bar, .bar:after, .bar:before { height: 1px; }
+
+	.bar:before { bottom: 8px; }
+	.bar:after { top: 8px; }
+
+	.menu-burger { margin-bottom: 0; }
+
 }
