@@ -208,6 +208,12 @@
 	.bar:before {
 		height: 2px;
 		background: black;
+
+		webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
 	}
 
 	.bar:before { width: 30px; }
@@ -266,7 +272,7 @@
 		overflow: auto;
 		z-index: 10000; /* One less than menu-burger */ 
 		/* Background Image */
-		background: white;
+		background: rgba(255, 255, 255, 0.9);
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -360,7 +366,7 @@
 /*  RESPONSIVE STARTS HERE  */
 
 @media (max-width: 500px){
-	body { overflow: visible; }
+	/*body { overflow: visible; }*/
 
 	nav { 
 		position: fixed;
@@ -369,9 +375,25 @@
 		background: white;
 	}
 
-	nav a > img { height: 35px; }
+	nav a > img {
+		height: 35px;
 
-	.bar, .bar:after, .bar:before { height: 1px; }
+		webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+	}
+
+	.bar, .bar:after, .bar:before {
+		height: 1px;
+
+		webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+	}
 
 	.bar:before { bottom: 6px; 	width: 23px;}
 	.bar { width: 8px;}
