@@ -40,173 +40,6 @@ html {
     z-index: 1100;
 }
 
-nav {
-	position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-
-    display: inline-flex;
-    flex-flow: column;
-    justify-content: space-between;
-
-    height: calc(100vh - 100px);
-    width: 175px;
-    padding: 50px 60px;
-}
-
-nav a.logo {
-	font: 700 55px "Heebo", "Raleway", Helvetica, sans-serif;
-	color: black;
-	text-decoration: none;
-	letter-spacing: -2px;
-
-    /* Allows future */
-    width: calc(100vw - 90px);
-}
-
-nav a.logo:hover { color: black !important; }
-
-/*nav a.logo:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    margin: -20px 0 0 10px;
-    background-color: #a3876d;
-
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-}
-
-nav a.logo:hover:after {
-    margin-left: 19px;
-	width: 153px;
-	letter-spacing: 2px;
-	transition: all .15s ease-in-out;
-    -webkit-transition: all .15s ease-in-out;
-    -moz-transition: all .15s ease-in-out;
-    -o-transition: all .15s ease-in-out;
-}*/
-
-.gold-dot {	color: #a3876d; }
-
-nav a.logo img {
-    width: 175px;
-    height: auto;
-    margin-top: 10px;
-}
-
-nav a.nav-li {
-	display: block;
-	margin-top: 40px;
-	font: 700 25px "Heebo", Helvetica, sans-serif;
-	color: grey;
-	letter-spacing: -1px;
-	text-decoration: none;
-	cursor: not-allowed;
-}
-
-nav a.nav-li:first-child { cursor: pointer; }
-
-
-nav .nav-li:after {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    margin: -7px 0 0;
-    background-color: #a3876d;
-
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-}
-
-nav .nav-li:hover:after {
-	transition: all .15s ease-in-out;
-    -webkit-transition: all .15s ease-in-out;
-    -moz-transition: all .15s ease-in-out;
-    -o-transition: all .15s ease-in-out;
-}
-
-
-/* Controls the animation length of the underline extension animation */
-nav a.li-about:hover:after  { width: 65px; }
-nav a.li-int:nth-child(2):hover:after { width: 96px; }
-nav a.li-exp:nth-child(3):hover:after { width: 119px; }
-nav a.li-last:last-child:hover:after 	 { width: 83px; }
-
-
-/* Overrides the gold hover animation to black */
-nav .nav-li:hover { color: black !important; }
-
-/* Used to make the section seem more centered in accordance with main text hero on index.html */
-nav .nav-li:first-child { margin: -70px 0 0; }
-
-footer {
-	display: block;
-	font: 700 13px "Heebo", Helvetica, sans-serif;
-	letter-spacing: .01rem;
-	color: black;
-}
-
-footer a div {
-	height: 25px;
-	width: 25px;
-	display: inline-block;
-	margin: 0 15px 0 0;
-	cursor: pointer;
-
-	background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-	transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    -o-transform: translate(0, 0); 
-    -moz-transform: translate(0, 0);
-
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-}
-
-footer a div:hover {
-    transform: translate(0,-3px);
-    -webkit-transform: translate(0,-3px);
-    -o-transform: translate(0,-3px); 
-    -moz-transform: translate(0,-3px);
-
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-}
-
-footer .twitter-icon { background-image: url('../img/icons/black-social/twitter.png'); }
-footer .ig-icon { background-image: url('../img/icons/black-social/instagram.png'); }
-footer .git-icon { background-image: url('../img/icons/black-social/github.png'); }
-footer .mail-icon { background-image: url('../img/icons/black-social//mail.png'); }
-
-footer .twitter-icon:hover { background-image: url('../img/icons/gold-social/twitter.png'); }
-footer .ig-icon:hover { background-image: url('../img/icons/gold-social/instagram.png'); }
-footer .git-icon:hover { background-image: url('../img/icons/gold-social/github.png'); }
-footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.png'); }
-
-
-footer p.copyright {
-	font-size: 14px;
-	text-transform: uppercase;
-	cursor: default;
-	color: #a3876d;
-}
-
-
 body { 
 	display: block;
 	width:  calc(100vw - 60px);
@@ -464,7 +297,8 @@ body canvas {
     right: 0;
     bottom: 0;
     background: white;
-    z-index: 9999;
+    /* Highest Priority item */
+    z-index: 10010;
 
     /*
         Greys:
@@ -493,5 +327,20 @@ body canvas {
 }
 
 /* END LOADING SCREEN STYLES */
+
+
+@media (max-width: 789px) {
+    #wrapper { width: calc(100vw - 60px); }
+    body .head-desc { font-size: 25px; }
+}
+
+@media (max-width: 500px) {
+    body .head-main {
+        font-size: 42px;
+        letter-spacing: 0px;
+    }
+
+    body .head-desc { font-size: 16px; }
+}
 
 

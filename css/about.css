@@ -89,11 +89,17 @@
     color: #333333;
 }
 
+.about p.main-text a {
+    border-bottom: 1px dotted #a3876d;
+    cursor: pointer;
+}
+
 @media ( max-width: 1425px) {
     .about p.main-text { width: calc(100% - 80px); }
 }
 
-.about p.main-text a {
-    border-bottom: 1px dotted #a3876d;
-    cursor: pointer;
+@media (max-width: 789px) {
+    .about h1.page-title { opacity: 0; }
+    .about div.about-summary { margin: 0; }
+    .about div.about-header { height: 20vh; }
 }

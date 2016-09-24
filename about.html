@@ -26,24 +26,28 @@
 
 	    <link rel="stylesheet" href="css/lib/normalize.css">
 	    <link rel="stylesheet" href="css/main.css">
+	    <link rel="stylesheet" href="css/navigation.css">
 	    <link rel="stylesheet" href="css/about.css">
+	    
 		
 		<!-- Put this up here because its supposed to load in before html -->
 	    <script src="js/load-screen.js"></script>
 
 		<nav>
-			<!-- <a class="logo" href="http://berninuben.com/">uben<span class="gold-dot">.<span></a> -->
-			<a class="logo" href="http://berninuben.com/"><img src="./img/uben-logo.png"></a>
-
-			<div>
+			<a class="nav-brand above-overlay" href="#"><img src="http://berninuben.com/img/uben-logo.png"></a>
+			
+			<div class="menu-burger above-overlay">
+				<div class="bar"></div>
+			</div>
+			
+			<div style="display: none;">
 				<a class="nav-li li-about" href="http://berninuben.com/about">about<span class="gold-dot">.</span></a>
 				<a class="nav-li li-int" href="#">interests<span class="gold-dot">.</span></a>
-
 				<a class="nav-li li-exp" href="#">experience<span class="gold-dot">.</span></a>
 				<!-- <a class="nav-li li-last" href="#"><span class="gold-dot">.</span></a> -->
 			</div>
 
-			<footer>
+			<footer style="display: none;">
 				<div>
 					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social twitter-icon"></div> </a>
 					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social ig-icon"></div> </a>
@@ -53,7 +57,18 @@
 				<p class="copyright">&copy; 2016 BERNIN A. UBEN</p>
 			</footer>
 		</nav>
-		
+
+		<div class="overlay" style="display:none;">
+			<ul class="menu-options-list">
+				<li class="menu-option option-1"><a href="http://berninuben.com/home">home<span>.</span></a></li>
+				<li class="menu-option option-2"><a href="http://berninuben.com/about">about<span>.</span></a></li>
+				<!-- <li class="menu-option option-3"><a href="#">work<span>.</span></a></li>
+				<li class="menu-option option-5"><a href="#">contact<span>.</span></a></li> -->
+			</ul>
+			</li>
+		</div>
+
+
 		<!-- This is for the loading screen animation -->
 		<section id="load" class="load"><p class="load-logo logo">uben<span class="gold-dot">.<span></p></section>
   	</head>
@@ -99,7 +114,8 @@
 	</body>
 
 	<script src='js/lib/jquery-3.1.0.min.js'></script>
-	<script src="js/main.js"></script>
+	<script src='js/navigation.js'></script>
+	<script src='js/main.js'></script>
 	<!-- <script src="js/about.js"></script> -->
 	
   </body>
