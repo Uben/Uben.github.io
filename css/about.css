@@ -103,3 +103,25 @@
     .about div.about-summary { margin: 0; }
     .about div.about-header { height: 20vh; }
 }
+
+
+@media ( max-width: 500px ) {
+    .about div.about-header { height: 15vh; }
+
+    .about h2.header-text {
+        font-size: 35px;
+        height: 45px;
+        padding-top: 0;
+        margin: -4.5vh 10% 0;
+    }
+
+    .about div.about-general { padding: 15px 30px 15px; }
+    .about div.about-general p { font-size: 15px; }
+    .about div.about-general div:first-child p { font-size: 18px; }
+    .about p.main-text {
+        font-size: 12px;
+        line-height: 22px;
+        padding: 0 0 20px 30px;
+    }
+
+}

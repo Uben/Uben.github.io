@@ -355,6 +355,10 @@
 }
 
 
+
+
+/*  RESPONSIVE STARTS HERE  */
+
 @media (max-width: 500px){
 	body { overflow: visible; }
 
@@ -365,12 +369,15 @@
 		background: white;
 	}
 
-	nav a > img { height: 42px; }
+	nav a > img { height: 35px; }
 
 	.bar, .bar:after, .bar:before { height: 1px; }
 
-	.bar:before { bottom: 8px; }
-	.bar:after { top: 8px; }
+	.bar:before { bottom: 6px; 	width: 23px;}
+	.bar { width: 8px;}
+	.bar:after {  top: 6px;  	width: 17px;}
+
+	.bar.animate:after { width: 23px; }
 
 	.menu-burger { margin-bottom: 0; }
 
