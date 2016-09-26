@@ -17,7 +17,7 @@
 }
 
 .about div.about-header {
-	height: 35vh; /* 400px */
+	height: 25vh; /* 400px */
 	background: url('../img/header/circle.jpeg');
 	background-position: center center;
 	background-size: cover;

@@ -8,20 +8,19 @@
 
 	nav {
 		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000;
-
-		display: inline-flex;
-		flex-flow: column;
-		justify-content: space-between;
-
-		height: calc(100vh - 100px);
-		width: 175px;
-		padding: 50px 60px;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    z-index: 1000;
+	    display: inline-flex;
+	    flex-flow: column;
+	    justify-content: space-between;
+	    height: 93vh;
+	    width: 175px;
+	    padding: 4vh 65px 3vh 50px;
 	}
 
- 	nav a.nav-brand:after {
+ 	/*nav a.nav-brand:after {
 		content: '';
 		display: block;
 		width: 0;
@@ -43,7 +42,7 @@
 		-webkit-transition: all .15s ease-in-out;
 		-moz-transition: all .15s ease-in-out;
 		-o-transition: all .15s ease-in-out;
-	} 
+	} */
 
 	.gold-dot {	color: #a3876d; }
 
@@ -109,6 +108,7 @@
 		font: 700 13px "Heebo", Helvetica, sans-serif;
 		letter-spacing: .01rem;
 		color: black;
+		margin-bottom: 1vh;
 	}
 
 	footer a div {
@@ -177,8 +177,8 @@
 		align-items: center;
 		justify-content: space-between;
 
-		height: 100px;
-		width: calc(100vw - 60px);
+		height: 70px;
+		width: 100vw;
 		margin: 0;
 		padding: 0;
 		background-color: rgba(0, 0, 0, 0);
@@ -188,7 +188,7 @@
 
 	nav a.nav-brand {}
 	nav a > img {
-		height: 50px;
+		height: 45px;
 		width: auto;
 		margin-left: 20px;
 	}
@@ -199,14 +199,14 @@
 		 cursor: pointer;
 		 display: block;
 		 right: 50px;
-		 margin: 0 20px -10px 0;
+		 margin: 0 20px 0 0;
 		 padding: 10px;
 	}
 
 	.bar,
 	.bar:after,
 	.bar:before {
-		height: 2px;
+		height: 1px;
 		background: black;
 
 		webkit-transition: all .3s ease-in-out;
@@ -371,7 +371,7 @@
 	nav { 
 		position: fixed;
 		width: 100vw;
-		height: 70px;
+		height: 60px;
 		background: white;
 	}
 
@@ -402,5 +402,7 @@
 	.bar.animate:after { width: 23px; }
 
 	.menu-burger { margin-bottom: 0; }
+
+	.about div.about-header { margin-top: 88px; }
 
 }
