@@ -1,7 +1,7 @@
 /* CHECK THIS SITE FOR IE7+ SUPPORT VERSION: https://css-tricks.com/perfect-full-page-background-image/  */
 
 /* min-width is for the minimum width that these styles should apply*/
-@media (min-width: 790px) {
+@media (min-width: 769px) {
 	body div.overlay,
 	body div.menu-burger { display: none !important; }
 
@@ -169,9 +169,7 @@
 
 
 
-
-
-@media (max-width: 789px) {
+@media (max-width: 768px) {
 	nav {
 		display: inline-flex;
 		align-items: center;
@@ -216,8 +214,8 @@
 		transition: all .3s ease-in-out;
 	}
 
-	.bar:before { width: 30px; }
-	.bar  		{ width: 15px; }
+	.bar:before { width: 27px; }
+	.bar  		{ width: 17px; }
 	.bar:after 	{ width: 22px; }
 
 	.bar {
@@ -226,16 +224,11 @@
 		transition: all 0ms 300ms;
 	}
 
-	.bar.animate {
-		width: 30px;
-		background: rgba(255, 255, 255, 0);
-	}
-
 	.bar:before {
 		content: "";
 		position: absolute;
 		left: 0;
-		bottom: 10px;
+		bottom: 9px;
 		transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 
@@ -243,18 +236,28 @@
 		content: "";
 		position: absolute;
 		left: 0;
-		top: 10px;
+		top: 9px;
 		transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 
-	.bar.animate:after {
+	
+	.bar.animate {
 		width: 30px;
+		/* Bar becomes transparent when the other two bars form the x */
+		background: rgba(255, 255, 255, 0);
+	}
+
+	.bar.animate:after {
+		/* One of two bars that turns to cross*/
+		width: 25px;
 		top: 0;
 		transform: rotate(45deg);
 		transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 
 	.bar.animate:before {
+		/* One of two bars that turns to cross*/
+		width: 25px;
 		bottom: 0;
 		transform: rotate(-45deg);
 		transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
