@@ -62,6 +62,9 @@ body #outline {
     z-index: 9999;
 }
 
+/*body #outline { display: none !important; }*/
+
+
 body section.site-header {
     display: flex;
     flex-flow: column nowrap;
@@ -287,8 +290,8 @@ body canvas {
     100% { opacity: 0; }
 }
 
-
 #load {
+    /*display: block;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -323,6 +326,11 @@ body canvas {
     -o-animation:      rBlink 1s 1; /* Opera 12+ */
     animation:         rBlink 1s 1; /* IE 10+, Fx 29+ */
 }
+
+/*@media (max-width: 769px) {
+    #load { display: none; }
+}
+*/
 
 /* END LOADING SCREEN STYLES */
 
