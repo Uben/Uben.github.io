@@ -155,7 +155,6 @@
 	footer .git-icon:hover { background-image: url('../img/icons/gold-social/github.png'); }
 	footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.png'); }
 
-
 	footer p.copyright {
 		font-size: 14px;
 		text-transform: uppercase;
@@ -361,6 +360,46 @@
 	  -o-animation:      slideDownIn 1s; /* Opera 12+ */
 	  animation:         slideDownIn 1s; /* IE 10+, Fx 29+ */
 	}
+
+
+	#overlay footer {
+		position: absolute;
+	    bottom: 5vh;
+	    left: 0;
+	    right: 0;
+	    text-align: center;
+	}
+
+	#overlay footer div {
+		width: 300px;
+		margin: 0 0 10px 0;
+
+		display: inline-flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#overlay footer div .social {
+	    width: 30px;
+	    height: 30px;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    cursor: pointer;
+	}
+
+	#overlay footer p.copyright { font: 700 15px 'Heebo', Helvetica, sans-serif; }
+
+	#overlay footer .twitter-icon { background-image: url('../img/icons/black-social/twitter.png'); }
+	#overlay footer .ig-icon { background-image: url('../img/icons/black-social/instagram.png'); }
+	#overlay footer .git-icon { background-image: url('../img/icons/black-social/github.png'); }
+	#overlay footer .mail-icon { background-image: url('../img/icons/black-social//mail.png'); }
+
+	#overlay footer .twitter-icon:hover { background-image: url('../img/icons/gold-social/twitter.png'); }
+	#overlay footer .ig-icon:hover { background-image: url('../img/icons/gold-social/instagram.png'); }
+	#overlay footer .git-icon:hover { background-image: url('../img/icons/gold-social/github.png'); }
+	#overlay footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.png'); }
 }
 
 
