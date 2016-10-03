@@ -44,14 +44,14 @@ body {
     height: 100vh;
     z-index: 1;
     background: none;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 /* For the grey outline */
 body #outline {
     width: calc(100vw - 50px);
     height: calc(100vh - 50px);
-    position: absolute;
+    position: fixed;
     top: 23px;
     left: 23px;
     bottom: 23px;
@@ -221,8 +221,8 @@ body canvas {
 }
 
 /* This is for the color when you highlight something on page */
-*::selection { background: rgba(163, 135, 109, .6); }
-*::-moz-selection { background: rgba(163, 135, 109, .6); }
+*::selection { background: rgba(163, 135, 109, .7); }
+*::-moz-selection { background: rgba(163, 135, 109, .7); }
 
 
 /* Test after line */

@@ -4,89 +4,115 @@
 /* Set base for fonts on this page */
 .about p { font: 300 15px "PT Mono", monospace; }
 
-.about h1.page-title {
-	padding: 55px 30px 5px 0;
-    margin: 0;
-    /* background: white; */
-
-    font: 700 40px "Heebo", "Raleway", Helvetica, sans-serif;
-    color: black;
-    text-align: right;
-    text-decoration: none;
-    letter-spacing: -3px;
-}
-
 .about div.about-header {
-	height: 25vh; /* 400px */
+	height: 50vh; /* 400px */
 	background: url('../img/header/circle.jpeg');
 	background-position: center center;
 	background-size: cover;
+    position: relative;
 }
+
+.about h1.page-title {
+    margin: 0;
+    padding: 10px 40px;
+    width: 75%;
+    
+    color: black;
+    text-align: center;
+    letter-spacing: 5px;
+    font: 700 50px "Heebo", "Raleway", Helvetica, sans-serif;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.about h1 > span {
+    font-size: 15rem;
+    text-transform: capitalize;
+    color: rgba(255,255,255,.7);
+}
+
+.about h1 > span.gold-dot {
+    color: #a3876d;
+    opacity: .7;
+}
+
+.about div.about-header span.title-spacer { margin: 0 10px; }
+
+
+
+/* Under header styles */
+
+.about div.header-sub {
+    height: 10vh;
+    width: 100%;
+    background: rgba(170, 148, 131, 1);
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about div.header-sub h2.title {
+    width: 100%;
+    margin: 0;
+    color: black;
+    font: 400 25px 'heebo', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.85vw;
+    text-align: center;
+/*  top: 50%;
+    transform: translateY(50%);*/
+}
+
+
+/* about info section styles */
+
+/* gold rgba: rgba(163, 135, 109, .8) */
 
 /* Margin top in here dictates how far in the h2 title goes into the header */
-.about div.about-summary {
-	margin: 0 10%;
+.about div.about-info {
+	height: 70vh;
+    width: 100%;
+
+    margin: 0;
 	background: white;
-	/*background-color: rgba(163, 135, 109, .8);*/
 }
 
-.about h2.header-text {
-	font: 700 45px "Heebo", Helvetica, sans-serif;
-    letter-spacing: -2px;
-    background-color: white;
-    height: 60px;
-    margin: -7.5vh 10% 0;
-    padding: 10px 40px 0;
+.about .about-info div:first-child {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: left;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
-/*.about h2.header-text {
-    font: 700 45px "Heebo", Helvetica, sans-serif;
-    letter-spacing: -2px;
-    background-color: white;
-    height: 60px;
-    margin: -12vh 10% 0;
-    padding: 10px 40px 0;
-}*/
-
-.about div.about-general {
-	margin: 0;
-    padding: 30px 40px 15px;
+.about p.text-title {
+    width: 80%;
+    font: bold 17px 'Heebo', Helvetica;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
-
-.about div.about-general div { display: inline-block; }
-.about div.about-general div:last-child { margin-left: 20px; }
-
-.about div.about-general p {
-	font-size: 17px;
-	margin: 10px 0 0;
-}
-
-.about div.about-general div:first-child p {
-	font: 700 20px 'Heebo', Helvetica, sans-serif;
-    text-transform: lowercase;
-	letter-spacing: -1px;
-    margin-top: 2px;
-}
-
-.about div.about-general div:last-child p { 
-    color: #a3876d;
-    margin-top: 13px;
-}
-
-/*.about div.about-general span.about-quote {
-	display: inline-block;
-	vertical-align: top;
-	margin: 10px 10%; 0;
-	color: #a3876d;
-}*/
 
 .about p.main-text {
     margin: 0;
-    padding: 0 40px 20px;
-    line-height: 25px;
-    letter-spacing: 0;
-    width: 820px;
+    line-height: 30px;
+    letter-spacing: 1px;
     color: #333333;
+    width: 80%;
+    font-family: 'Raleway';
 }
 
 .about p.main-text a {
@@ -94,33 +120,122 @@
     cursor: pointer;
 }
 
-@media ( max-width: 1425px) {
-    .about p.main-text { width: calc(100% - 80px); }
+.about .about-info div.info {
+    height: calc(100% / 3);
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-info div.info p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about .about-info div.info-1 p { color: #1b1b1b; }
+.about .about-info div.info-2 p { color: lightgrey; }
+.about .about-info div.info-3 p { color: black; }
+
+.about .about-info div.info p:first-child {
+    font: bold 17px 'Heebo', Helvetica, sans-serif;
+    width: 125px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.about .about-info div.info p:last-child  { font: normal 17px 'Raleway', monospace; }
+
+.about .about-info div.info-1 { background: #e3e3e3; }
+.about .about-info div.info-2 { background: #1b1b1b; }
+/*.about .about-info div.info-3 { background: #666666; }*/
+
+
+/* After underlines in about info */
+.about .about-info div.info p:first-child:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #a3876d;
+    margin: 0 auto 5px;
+}
+
+/*.about .about-info div.info-1 p:first-child:after { background-color: #a3876d; }
+.about .about-info div.info-2 p:first-child:after { background-color: #a3876d; }
+.about .about-info div.info-3 p:first-child:after { background-color: #1b1b1b; }*/
+
+.about .img-banner {
+    width: 100%;
+    height: 10vh;
+    display: block;
+
+    /*background: url('../img/header/blue-build.jpeg');*/
+    background: black;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+@media (max-width: 1050px) {
+    .about div.about-header { height: 35vh; }
+
+    .about h1 > span { font-size: 7rem; }
+
+    .about .about-info div:first-child {
+        width: 100%;
+        height: 40%;
+    }
+
+    .about .about-info div.info {
+        height: calc(60% / 3);
+        width: 100%;
+    }
+
+    .about .img-banner { display: none; }
 }
 
 @media (max-width: 768px) {
     .about h1.page-title { opacity: 0; }
-    .about div.about-summary { margin: 0; }
+    .about div.about-info { margin: 0; }
     .about div.about-header { height: 20vh; }
+
+    .about div.header-sub h2.title { font-size: 18px; }
+
+    .about .about-info div:first-child {
+        width: 100%;
+        height: 50%;
+    }
+
+    .about .about-info div.info {
+        height: calc(60% / 3);
+        width: 100%;
+    }
 }
 
 
 @media ( max-width: 500px ) {
     .about div.about-header { height: 15vh; }
-
-    .about h2.header-text {
-        font-size: 35px;
-        height: 45px;
-        padding-top: 0;
-        margin: -4.5vh 10% 0;
-    }
-
-    .about div.about-general { padding: 15px 30px 15px; }
-    .about div.about-general p { font-size: 15px; }
-    .about div.about-general div:first-child p { font-size: 18px; }
     .about p.main-text {
         font-size: 12px;
         line-height: 22px;
-        padding: 0 0 20px 30px;
+    }
+
+
+}
+
+@media ( max-width: 400px ) {
+    .about .about-info div:first-child {
+        width: 100%;
+        height: 70%;
+    }
+
+    .about .about-info div.info {
+        height: calc(60% / 3);
+        width: 100%;
     }
 }
