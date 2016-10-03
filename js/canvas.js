@@ -1,7 +1,7 @@
 // CANVAS JS SCRIPTS
 
 // change back to > 1000 to resume functionality
-if (window.innerWidth > 4000 ) {
+// if (window.innerWidth > 4000 ) {
 
 (function() {
   var app, fnAddEventListener, fnRequestAnimationFrame;
@@ -258,4 +258,4 @@ if (window.innerWidth > 4000 ) {
 }).call(this);
 
 // close bracket for window size conditiional
-}
+// }
