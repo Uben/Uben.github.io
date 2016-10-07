@@ -363,6 +363,8 @@ body canvas {
         margin-top: 70px;
     }
 
+    body { overflow: hidden; }
+
     #outline { display: none; }
     .about h1.page-title { display: none; }
     body .head-desc { font-size: 25px; }
