@@ -1,5 +1,26 @@
 @import 'https://fonts.googleapis.com/css?family=Heebo:300,700|Raleway:400,700';
 
+@font-face {
+    font-family: Orkney;
+    src: url(../fonts/orkney/Orkney-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Orkney-Bold;
+    src: url(../fonts/orkney/Orkney-Light.otf);
+}
+
+@font-face {
+    font-family: Anurati;
+    src: url(../fonts/ANURATI/Anurati.otf);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/Avenir/AvenirLTStd-Bold.otf);
+}
+
 a {
 	color: black;
 	text-decoration: none;
@@ -83,13 +104,13 @@ body section.site-header {
 }
 
 body .head-main {
-	font: 700 7.5vw "Heebo", Helvetica, sans-serif; /* prev: 125px */
+	font: 700 7.5vw 'Heebo', Helvetica, sans-serif; /* prev: 125px */
 	letter-spacing: -7px;
 	text-transform: uppercase;
 }
 
 body .head-desc {
-	font: 400 27px "Raleway", Helvetica, sans-serif;
+	font: normal 27px 'Orkney-Bold', Helvetica, sans-serif;
 	color: grey;
   	text-transform: uppercase;
   	letter-spacing: .14rem;
@@ -337,7 +358,11 @@ body canvas {
 
 
 @media (max-width: 769px) {
-    #wrapper { width: 100vw; }
+    #wrapper {
+        width: 100vw;
+        margin-top: 70px;
+    }
+
     #outline { display: none; }
     .about h1.page-title { display: none; }
     body .head-desc { font-size: 25px; }
@@ -373,6 +398,7 @@ body canvas {
 
     #wrapper {
         width: 100vw;
+        margin-top: 0;
         position: absolute;
         top: -28px;
         right: 0;

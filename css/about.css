@@ -2,7 +2,7 @@
 .about { background-color: #FCFCFC; }
 
 /* Set base for fonts on this page */
-.about p { font: 300 15px "PT Mono", monospace; }
+.about p { font: 300 15px 'Raleway', monospace; }
 
 .about div.about-header {
 	height: 50vh; /* 400px */
@@ -17,24 +17,26 @@
 
 .about h1.page-title {
     margin: 0;
-    padding: 10px 40px;
+    padding: 0 5%;
     width: 90%;
     
     color: black;
     text-align: center;
     letter-spacing: 5px;
-    font: 700 50px "Heebo", "Raleway", Helvetica, sans-serif;
+    font: 700 50px 'Anurati', Helvetica, sans-serif;
 
     position: absolute;
     /*top: 50%;*/
     /*left: 50%;*/
     /*transform: translate(-50%, -50%);*/
-    top: 11vh;
+    top: 0;
     right: 0;
+    height: 50vh;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .about h1 > span {
@@ -69,7 +71,7 @@
     width: 100%;
     margin: 0;
     color: black;
-    font: 400 25px 'heebo', sans-serif;
+    font: normal 25px 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.85vw;
     text-align: center;
@@ -105,7 +107,7 @@
 
 .about p.text-title {
     width: 80%;
-    font: bold 17px 'Heebo', Helvetica;
+    font: bold 17px 'Orkney', Helvetica;
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -118,6 +120,7 @@
     color: #333333;
     width: 80%;
     font-family: 'Raleway';
+    font-size: 16px;
 }
 
 .about p.main-text a {
@@ -145,7 +148,7 @@
 .about .about-info div.info-3 p { color: black; }
 
 .about .about-info div.info p:first-child {
-    font: bold 17px 'Heebo', Helvetica, sans-serif;
+    font: bold 17px 'Orkney', Helvetica, sans-serif;
     width: 125px;
     text-align: center;
     letter-spacing: 3px;
@@ -174,7 +177,7 @@
 
 .about .img-banner {
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     display: block;
 
     /*background: url('../img/header/blue-build.jpeg');*/
@@ -184,6 +187,13 @@
     position: relative;
 }
 
+
+@media (max-width: 1250px) {
+    .about h1 > span { font-size: 10rem; }
+
+    .about h1.page-title,
+    .about div.about-header { height: 35vh; }
+}
 
 
 @media (max-width: 1050px) {
@@ -198,7 +208,8 @@
 
     .about .about-info div:first-child {
         width: 100%;
-        height: 40%;
+        height: auto;
+        padding: 40px 0;
     }
 
     .about .about-info div.info {
@@ -210,7 +221,15 @@
 }
 
 @media (max-width: 768px) {
-    .about h1.page-title { opacity: 0; }
+    .about h1.page-title {
+        top: 0;
+        height: 20vh;
+        padding: 0 5vw;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about h1 > span { font-size: 6rem; }
     .about div.about-info { margin: 0; }
     .about div.about-header { height: 20vh; }
 
@@ -218,7 +237,8 @@
 
     .about .about-info div:first-child {
         width: 100%;
-        height: 50%;
+        height: auto;
+        padding: 40px 0;
     }
 
     .about .about-info div.info {
@@ -229,20 +249,41 @@
 
 
 @media ( max-width: 500px ) {
+    .about h1 > span { font-size: 5rem; }
     .about div.about-header { height: 15vh; }
+    .about div.header-sub { height: 10vh; }
+    .about div.header-sub h2.title { font-size: 15px; }
     .about p.main-text {
         font-size: 12px;
         line-height: 22px;
     }
 
+    .about h1.page-title,
+    .about div.about-header { height: 25vh !important; }
+    
+    .about h1.page-title {
+        top: 88px;
+        height: 15vh;
+    }
+
+    .about .about-info div.info p:first-child,
+    .about .about-info div.info p:last-child { font-size: 15px; }
+
 
 }
 
 @media ( max-width: 400px ) {
-    .about .about-info div:first-child {
-        width: 100%;
-        height: 70%;
+    .about h1 > span { font-size: 3.5rem; }
+
+    .about div.header-sub h2.title { font-size: 12px; }
+
+    .about p.text-title {
+        font-size: 14px;
+        margin-bottom: 4px;
     }
+
+    .about .about-info div.info p:first-child,
+    .about .about-info div.info p:last-child { font-size: 14px; }
 
     .about .about-info div.info {
         height: calc(60% / 3);
