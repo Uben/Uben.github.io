@@ -5,7 +5,7 @@
 .about p { font: 300 15px 'Raleway', monospace; }
 
 .about div.about-header {
-	height: 50vh; /* 400px */
+	height: 49vh; /* 400px */
     position: relative;
 	
 
@@ -264,6 +264,7 @@
     .about h1.page-title {
         top: 88px;
         height: 15vh;
+        width: 80%;
     }
 
     .about .about-info div.info p:first-child,

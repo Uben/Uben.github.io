@@ -62,7 +62,6 @@
 		letter-spacing: -1px;
 		text-decoration: none;
 		text-transform: lowercase;
-		cursor: not-allowed;
 	}
 
 	nav a.nav-li:first-child { cursor: pointer; }
@@ -91,6 +90,7 @@
 
 
 	/* Controls the animation length of the underline extension animation */
+	nav a.li-idx:hover:after  { width: 65px; }
 	nav a.li-about:hover:after  { width: 65px; }
 	nav a.li-int:nth-child(2):hover:after { width: 96px; }
 	nav a.li-exp:nth-child(3):hover:after { width: 119px; }
@@ -443,6 +443,7 @@
 
 	.menu-burger { margin-bottom: 0; }
 
-	.about div.about-header { margin-top: 88px; }
+	.about div.about-header { margin-top: 96px !important; }
+	.about h1.page-title { top: 96px !important; }
 
 }
