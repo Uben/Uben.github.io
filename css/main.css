@@ -392,7 +392,7 @@ body canvas {
 
     body section.site-header {
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         overflow: hidden;
         cursor: default;
         top: 0;
