@@ -254,7 +254,7 @@
 @media ( max-width: 500px ) {
     .about h1 > span { font-size: 5rem; }
     .about div.about-header { height: 15vh; }
-    .about div.header-sub { height: 7vh; }
+    .about div.header-sub { height: 8.5vh; }
     .about div.header-sub h2.title { font-size: 15px; }
     .about p.main-text {
         font-size: 12px;

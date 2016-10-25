@@ -237,7 +237,8 @@ body a.current:hover .gold-dot { color: grey; }
 /* FOR PARTICLE CIRCLE ON HOMEPAGE */
 body canvas {
 	position: absolute;
-    right: -10%;
+    /*right: -10%;*/
+    right: 0%;
     top: 0%;
     width: 90vw;
     height: 90vh;
