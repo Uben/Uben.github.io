@@ -19,7 +19,6 @@
     margin: 0;
     padding: 0 5%;
     width: 90%;
-    overflow: hidden;
     
     color: black;
     text-align: center;
@@ -69,8 +68,9 @@
 }
 
 .about div.header-sub h2.title {
-    width: 100%;
-    margin: 0;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
     color: black;
     font: normal 25px 'Raleway', sans-serif;
     text-transform: uppercase;
@@ -225,9 +225,11 @@
     .about h1.page-title {
         top: 0;
         height: 20vh;
-        padding: 0 5vw;
+        padding: 0;
         align-items: center;
-        margin: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
     }
 
     .about h1 > span { font-size: 6rem; }
