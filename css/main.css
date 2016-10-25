@@ -49,6 +49,7 @@ p {
 html {
 	background: white;
 	font: normal 12px 'Raleway', Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 #wrapper {
