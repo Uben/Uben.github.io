@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0 5%;
     width: 90%;
+    overflow: hidden;
     
     color: black;
     text-align: center;
