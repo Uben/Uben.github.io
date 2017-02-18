@@ -24,13 +24,31 @@
         <title>Uben | Software Developer</title>
         <link rel="shortcut icon" href="img/logo.png">
 
-	    <!-- Regular CSS Files -->
+	    <!-- CSS Files -->
 	    <link rel="stylesheet" href="css/lib/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	    <link rel="stylesheet" href="css/main.css">
 	    <link rel="stylesheet" href="css/navigation.css">
+	    <link href="https://fonts.googleapis.com/css?family=Heebo:700|Roboto+Mono:300,400" rel="stylesheet">
 
-		<nav class="above-overlay">
-			<a class="nav-brand above-overlay" href="http://berninuben.com/"><img src="http://berninuben.com/img/uben-logo.png"></a>
+	    <!-- Javascript Files -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="js/main.js"></script>
+		<script src='js/navigation.js'></script>
+		<script src='js/lib/dat-gui-v2.min.js'></script>
+		<script src='js/lib/stats-1.0.min.js'></script>
+		<script src="js/lib/typed.js"></script>
+		<script src="js/canvas.js"></script>
+  	</head>
+
+
+  	<body class="homepage">
+  		<!-- BEGIN NAVIGATION -->
+  		<!-- BEGIN NAVIGATION -->
+  		<!-- BEGIN NAVIGATION -->
+
+  		<nav class="above-overlay">
+			<a id='logo' class="nav-brand above-overlay" href="http://berninuben.com/"><img src="http://berninuben.com/img/uben-logo.png"></a>
 			
 			<div class="menu-burger above-overlay">
 				<div class="bar"></div>
@@ -46,12 +64,12 @@
 
 			<footer style="display: none;">
 				<div>
-					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social twitter-icon"></div> </a>
-					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social ig-icon"></div> </a>
-					<a href="https://github.com/Uben" target="blank"> <div class="social git-icon"></div> </a>
-					<a href="mailto:berninuben@gmail.com"> <div class="social mail-icon"></div> </a>
+					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social fa fa-twitter"></div> </a>
+					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social fa fa-instagram"></div> </a>
+					<a href="https://github.com/Uben" target="blank"> <div class="social fa fa-github"></div> </a>
+					<a href="mailto:berninuben@gmail.com"> <div class="social fa fa-paper-plane-o"></div> </a>
 				</div>
-				<p class="copyright">&copy; 2016 BERNIN A. UBEN</p>
+				<p class="copyright">&copy; 2017 BERNIN A. UBEN</p>
 			</footer>
 		</nav>
 
@@ -66,61 +84,46 @@
 
 			<footer>
 				<div>
-					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social twitter-icon"></div> </a>
-					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social ig-icon"></div> </a>
-					<a href="https://github.com/Uben" target="blank"> <div class="social git-icon"></div> </a>
-					<a href="mailto:berninuben@gmail.com"> <div class="social mail-icon"></div> </a>
+					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social fa fa-twitter"></div> </a>
+					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social fa fa-instagram"></div> </a>
+					<a href="https://github.com/Uben" target="blank"> <div class="social fa fa-github"></div> </a>
+					<a href="mailto:berninuben@gmail.com"> <div class="social fa fa-mail"></div> </a>
 				</div>
-				<p class="copyright">&copy; 2016 BERNIN A. UBEN</p>
+				<p class="copyright">&copy; 2017 BERNIN A. UBEN</p>
 			</footer>
 		</div>
-
-
 		<!-- This is for the loading screen animation -->
 		<!-- <section id="load" class="load"><p class="load-logo logo">uben<span class="gold-dot">.</span></p></section> -->
-  	</head>
 
-  	<body class="homepage">
-		<canvas id="nCanvasRender"></canvas>
+		<!-- END NAVIGATION  -->
+		<!-- END NAVIGATION  -->
+		<!-- END NAVIGATION  -->
+
+
+
+		<!-- <canvas id="nCanvasRender"></canvas> -->
 		
 		<!-- Grey Square Site Outline -->
 		<div id="outline"></div>
 
-		<section class="site-header">
-			<!-- <p class="desc-one head-desc">i am</p> -->
-			<p class="head-main">bernin a. uben</p>
-			<p class="desc-two head-desc"><span></span></p>
+		<section id="container">
+			<h1 class="title">bernin a. uben</h1>
+			<h6 class="title subtitle"><span></span></h6>
 		</section>
-
-		<!-- <div class="line-container">
-			<div class="scroll-text">scroll</div>
-			<div class="down-line"></div>
-		</div> -->
 			
-		<a class="current" href="http://twowords.co/" target="blank">developer intern :: @twowords<span class="gold-dot">.<span></a>
-	</body>
+		<a id="current" href="http://twowords.co/" target="blank">developer intern :: @twowords<span class="gold-dot">.<span></a>
 	
-	<script src="js/main.js"></script>
-	<script src='js/lib/jquery.fullpage.min.js'></script>
-	<script src='js/lib/jquery-3.1.0.min.js'></script>
-	<script src='js/lib/dat-gui-v2.min.js'></script>
-	<script src='js/lib/stats-1.0.min.js'></script>
-	<script src="js/lib/typed.js"></script>
-	
-	<script>
-	  $(function(){
-	      $(".desc-two span").typed({
-	        strings: ["Computer Science Student", "Rubyist", "Software Developer"],
-	        typeSpeed: 50,
-	        backSpeed: 0,
-	        startDelay: 1000,
-	        backDelay: 1000
-	      });
-	  });
-	</script>
-	<script src='js/navigation.js'></script>
-	<script src="js/canvas.js"></script>
-	<script src="js/index.js"></script>
-	
-  </body>
+		<script>
+		  $(function(){
+		      $(".subtitle span").typed({
+		        strings: ["Computer Science Student", "Rubyist", "Software Developer"],
+		        typeSpeed: 50,
+		        backSpeed: 0,
+		        startDelay: 1000,
+		        backDelay: 1000
+		      });
+		  });
+		</script>
+
+  	</body>
 </html>

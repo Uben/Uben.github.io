@@ -13,49 +13,28 @@
 	    bottom: 0;
 	    z-index: 1000;
 	    display: inline-flex;
-	    flex-flow: column;
+	    flex-flow: column nowrap;
 	    justify-content: space-between;
-	    height: 93vh;
-	    width: 175px;
-	    padding: 4vh 65px 3vh 50px;
+	    height: 100%;
+	    width: 300px;
+	    padding: 40px 0 45px 55px;
 	}
-
- 	/*nav a.nav-brand:after {
-		content: '';
-		display: block;
-		width: 0;
-		height: 2px;
-		margin: 0 0 0 10px;
-		background-color: #a3876d;
-
-		transition: all .5s ease-in-out;
-		-webkit-transition: all .5s ease-in-out;
-		-moz-transition: all .5s ease-in-out;
-		-o-transition: all .5s ease-in-out;
-	}
-
-	nav a.nav-brand:hover:after {
-		margin-left: 19px;
-		width: 153px;
-		letter-spacing: 2px;
-		transition: all .15s ease-in-out;
-		-webkit-transition: all .15s ease-in-out;
-		-moz-transition: all .15s ease-in-out;
-		-o-transition: all .15s ease-in-out;
-	} */
 
 	.gold-dot {	color: #a3876d; }
 
-	nav .nav-brand img {
+	nav #logo img {
 		width: 175px;
 		height: auto;
 		margin-top: 10px;
 	}
 	
-	nav > div { display: block !important; }
+	nav > div {
+		display: flex !important;
+    	flex-flow: column nowrap;
+	}
 
 	nav a.nav-li {
-		display: block !important;
+		display: inline-block !important;
 		margin-top: 40px;
 		font: 700 25px "Heebo", Helvetica, sans-serif;
 		color: grey;
@@ -82,14 +61,14 @@
 	}
 
 	nav .nav-li:hover:after {
+		/*width: calc(100% + 4px);*/
+
 		transition: all .15s ease-in-out;
 		 -webkit-transition: all .15s ease-in-out;
 		 -moz-transition: all .15s ease-in-out;
 		 -o-transition: all .15s ease-in-out;
 	}
 
-
-	/* Controls the animation length of the underline extension animation */
 	nav a.li-idx:hover:after  { width: 65px; }
 	nav a.li-about:hover:after  { width: 65px; }
 	nav a.li-int:nth-child(2):hover:after { width: 96px; }
@@ -103,13 +82,25 @@
 	/* Used to make the section seem more centered in accordance with main text hero on index.html */
 	nav .nav-li:first-child { margin: -70px 0 0; }
 
+
 	footer {
 		display: block !important;
-		font: 700 13px "Orkney", Helvetica, sans-serif;
+		font: 700 13px "Roboto Mono", Helvetica, sans-serif;
 		letter-spacing: 0;
 		color: black;
 		margin-bottom: 1vh;
+
+		display: flex !important;
+    	flex-flow: column nowrap;
 	}
+
+	
+	footer .img-container {
+		display: flex;
+	    flex-flow: row nowrap;
+	    justify-content: flex-start;
+	}
+
 
 	footer a div {
 		height: 25px;
@@ -145,7 +136,7 @@
 		 -o-transition: all .3s ease-in-out;
 	}
 
-	footer .twitter-icon { background-image: url('../img/icons/black-social/twitter.png'); }
+	/*footer .twitter-icon { background-image: url('../img/icons/black-social/twitter.png'); }
 	footer .ig-icon { background-image: url('../img/icons/black-social/instagram.png'); }
 	footer .git-icon { background-image: url('../img/icons/black-social/github.png'); }
 	footer .mail-icon { background-image: url('../img/icons/black-social//mail.png'); }
@@ -153,7 +144,12 @@
 	footer .twitter-icon:hover { background-image: url('../img/icons/gold-social/twitter.png'); }
 	footer .ig-icon:hover { background-image: url('../img/icons/gold-social/instagram.png'); }
 	footer .git-icon:hover { background-image: url('../img/icons/gold-social/github.png'); }
-	footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.png'); }
+	footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.png'); }*/
+
+	footer .fa {
+		font-size: 24px;
+		margin-bottom: 4px;
+	}
 
 	footer p.copyright {
 		font-size: 14px;
@@ -184,7 +180,7 @@
 
 	.above-overlay { z-index: 10001; }
 
-	nav a.nav-brand {}
+	nav a#logo {}
 	nav a > img {
 		height: 45px;
 		width: auto;

@@ -1,25 +1,68 @@
-@import 'https://fonts.googleapis.com/css?family=Heebo:300,700|Raleway:400,700';
 
-@font-face {
-    font-family: Orkney;
-    src: url(../fonts/orkney/Orkney-Bold.otf);
-    font-weight: bold;
+
+
+/* ****************************************************************************************** *\
+|* ****************************** GENERAL & MISCELLANEOUS *********************************** *|
+\* ****************************************************************************************** */
+
+/* Removes the blue outlines outside of everything */
+*, *:after, *:before, *:focus, *:active { outline: 0; }
+
+/* Sets the base speed for everything to move around */
+*, *:hover, *:active, *:focus {
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
 }
 
-@font-face {
-    font-family: Orkney-Bold;
-    src: url(../fonts/orkney/Orkney-Light.otf);
+/* global box-sizing */
+*, *:after, *:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+
+    text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: Anurati;
-    src: url(../fonts/ANURATI/Anurati.otf);
+/* This is for the color when you highlight something on page */
+/* Adding them together with commas wont work. DONT DO IT. */
+
+/* General selection colors */
+*::selection {
+    background: rgba(163, 135, 109, .75);
+    color: #FFF;
+    text-shadow: none;
 }
 
-@font-face {
-    font-family: Avenir;
-    src: url(../fonts/Avenir/AvenirLTStd-Bold.otf);
+/* Selection for webkit browsers: Chrome, Safari, Opera, Brave, etc. */
+*::-webkit-selection {
+    background: rgba(163, 135, 109, .75);
+    color: #FFF;
+    text-shadow:none;
 }
+
+/* Selection for Mozilla Browsers */
+*::-moz-selection {
+    background: rgba(163, 135, 109, .75);
+    color: #FFF;
+    text-shadow:none;
+}
+
+
+
+
+
+
+
+/* *********************************************************************** *\
+|* ****************************** GENERAL ******************************** *|
+\* *********************************************************************** */
 
 a {
 	color: black;
@@ -48,7 +91,7 @@ p {
 
 html {
 	background: white;
-	font: normal 12px 'Raleway', Helvetica, sans-serif;
+	font: 300 13px 'Roboto Mono', Helvetica, sans-serif;
     overflow: hidden !important;
     max-width: 100vw !important;
 }
@@ -86,10 +129,24 @@ body #outline {
     z-index: 9999;
 }
 
-/*body #outline { display: none !important; }*/
 
 
-body section.site-header {
+
+
+
+
+
+
+
+
+
+
+/* *********************************************************************** *\
+|* ********************************* MAIN ******************************** *|
+\* *********************************************************************** */
+
+
+#container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -105,108 +162,65 @@ body section.site-header {
     cursor: default;
 }
 
-body .head-main {
-	font: 700 7.5vw 'Heebo', Helvetica, sans-serif; /* prev: 125px */
-	letter-spacing: -7px;
-	text-transform: uppercase;
+#container .title {
+    color: #404040;
+    font: 600 80px 'Heebo', Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 65px;
+    margin: 0 0 12px;
 }
 
-body .head-desc {
-	font: normal 27px 'Orkney-Bold', Helvetica, sans-serif;
-	color: grey;
-  	text-transform: uppercase;
+#container .subtitle {
+    color: #999;
+	font: 300 30px 'Roboto Mono', monospace;
+  	text-transform: lowercase;
   	letter-spacing: .14rem;
 }
 
-body .desc-one { margin-bottom: -10px; }
-body .desc-two { margin-top: -20px; }
 
-body .line-container {
-	position: absolute;
-    min-height: 30px;
-    bottom: 30px;
-    right: 0;
-    left: 0;
-    z-index: 100;
 
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 0 35%;
-}
 
-body .line-container .scroll-text {
-	height: 20px;
-	min-width: 85px;
-    margin: 0 auto;
-    cursor: not-allowed;
 
-    color: black;
-    text-align: center;
-    font-family: "Raleway" !important;
-    letter-spacing: 3px;
-    text-transform: uppercase;
 
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out; 
-}
 
-body .line-container:hover .scroll-text { 
-	color: #a3876d;
 
-	transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out; 
-}
 
-body .line-container .down-line {
-	width: 1px;
-    height: 60px;
-    border-left: 1px solid black;
-    margin: 0 auto;
 
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-}
 
-body .line-container:hover .down-line { 
-	height: 45px;
-    border-color: #a3876d;
 
-    transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-}
 
-body a.current {
+
+
+
+
+
+
+/* ************************************************************************** *\
+|* ********************************* CURRENT ******************************** *|
+\* ************************************************************************** */
+
+#current {
 	position: absolute;
 	bottom: 50px;
 	right: 60px;
 	z-index: 200;
 
-	color: grey;
-	font-size: 12px;
-	font-weight: 700;
-	font-family: "Heebo";
+	color: #999;
+	font: 400 13px 'Roboto Mono', monospace;
 	text-decoration: none;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 
-body a.current:hover { color: black !important; }
+#current:hover { color: #404040 !important; }
 
-body a.current:after {
+#current:after {
     content: '';
     display: block;
     width: 20px;
-    height: 2px;
-    margin: -5px 0 0 1px;
+    height: 1px;
+    margin: 0;
     background-color: #a3876d;
 
     transition: all .5s ease-in-out;
@@ -215,29 +229,42 @@ body a.current:after {
     -o-transition: all .5s ease-in-out;
 }
 
-body a.current:hover:after {
-	width: 236px; /* prev: 315px; */
-	letter-spacing: 2px;
+#current:hover:after {
+	width: calc(100% - 4px);
 
-	transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
+	transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
 }
 
-body a.current .gold-dot { font-size: 20px; }
-body a.current:hover .gold-dot { color: grey; }
+#current .gold-dot { font-size: 20px; }
+#current:hover .gold-dot { color: grey; }
 
 
 
 
 
-/* SPECIAL SITE STYLES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************** *\
+|* ********************************* CANVAS ********************************* *|
+\* ************************************************************************** */
 
 /* FOR PARTICLE CIRCLE ON HOMEPAGE */
 body canvas {
 	position: absolute;
-    /*right: -10%;*/
     right: 0%;
     top: 0%;
     width: 90vw;
@@ -245,58 +272,61 @@ body canvas {
     z-index: -1;
 }
 
-/* This is for the color when you highlight something on page */
-*::selection { background: rgba(163, 135, 109, .7); }
-*::-moz-selection { background: rgba(163, 135, 109, .7); }
 
 
-/* Test after line */
-/* :after {
-    content: '';
-    display: block;
-    width: 400px;
-    height: 2px;
-    background-color: #a3876d;
-    margin: 10px auto 0;
-}
- */
 
+
+
+
+
+/* ************************************************************************** *\
+|* ********************************* TYPED.JS ******************************* *|
+\* ************************************************************************** */
 
  /* TYPED CSS*/
 .typed-cursor {
-    font-size: 33px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
     color: #a3876d;
 
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.85s infinite;
+    -moz-animation: blink 0.85s infinite;
+    animation: blink 0.85s infinite;
 }
 
 @keyframes blink {
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @-webkit-keyframes blink {
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @-moz-keyframes blink {
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-/* END TYPED CSS */
 
+
+
+
+
+
+
+
+
+/* ********************************************************************************* *\
+|* ********************************* LOADING SCREEN ******************************** *|
+\* ********************************************************************************* */
 
 /* This is for the loading screen animation */
-/* LOADING SCREEN STYLES */
 @keyframes rBlink {
     0% { opacity: 0; }
     80% { opacity: 1; }
@@ -323,14 +353,9 @@ body canvas {
     right: 0;
     bottom: 0;
     background: white;
+
     /* Highest Priority item */
     z-index: 10010;
-
-    /*
-        Greys:
-        #808080
-
-    */
 }
 
 #load p.logo {
@@ -352,13 +377,18 @@ body canvas {
     animation:         rBlink 1s 1; /* IE 10+, Fx 29+ */
 }
 
-/*@media (max-width: 769px) {
-    #load { display: none; }
-}
-*/
 
-/* END LOADING SCREEN STYLES */
 
+
+
+
+
+
+
+
+/* ********************************************************************************* *\
+|* ********************************* RESPONSIVE ************************************ *|
+\* ********************************************************************************* */
 
 @media (max-width: 769px) {
     #wrapper {
@@ -370,8 +400,8 @@ body canvas {
 
     #outline { display: none; }
     .about h1.page-title { display: none; }
-    body .head-desc { font-size: 25px; }
-    body .head-main { letter-spacing: 0; }
+    body .subtitle { font-size: 25px; }
+    body .title { letter-spacing: 0; }
 
     body.homepage a.current {
         bottom: 20px;
@@ -382,6 +412,8 @@ body canvas {
     }
 }
 
+
+
 @media (max-width: 500px) {
     body {
         border: none;
@@ -390,7 +422,7 @@ body canvas {
 
     body.homepage { overflow: hidden; }
 
-    body section.site-header {
+    body section.title-container {
         width: 100vw;
         height: 90vh;
         overflow: hidden;
@@ -410,15 +442,18 @@ body canvas {
         z-index: 100;
     }
 
-    body .head-main {
+    body .title {
         font-size: 50px;
         letter-spacing: 0px;
     }
 
-    body .head-desc { font-size: 16px; }
+    body .subtitle { font-size: 16px; }
 }
 
+
+
+
 @media (max-width: 400px){
-    body .head-main { font-size: 40px; }
+    body .title { font-size: 40px; }
 }
 
