@@ -83,6 +83,24 @@
 	nav .nav-li:first-child { margin: -70px 0 0; }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************************************************************************* *\
+|* ********************************* FOOTER **************************************** *|
+\* ********************************************************************************* */
+
 	footer {
 		display: block !important;
 		font: 700 13px "Roboto Mono", Helvetica, sans-serif;
@@ -95,10 +113,11 @@
 	}
 
 	
-	footer .img-container {
+	footer .social-container {
 		display: flex;
 	    flex-flow: row nowrap;
-	    justify-content: flex-start;
+	    justify-content: space-around;
+	    max-width: 195px;
 	}
 
 
@@ -108,32 +127,6 @@
 		display: inline-block;
 		margin: 0 15px 0 0;
 		cursor: pointer;
-
-		background-position: center center;
-		 background-repeat: no-repeat;
-		 background-size: cover;
-
-		transform: translate(0, 0);
-		 -webkit-transform: translate(0, 0);
-		 -o-transform: translate(0, 0); 
-		 -moz-transform: translate(0, 0);
-
-		 transition: all .3s ease-in-out;
-		 -webkit-transition: all .3s ease-in-out;
-		 -moz-transition: all .3s ease-in-out;
-		 -o-transition: all .3s ease-in-out;
-	}
-
-	footer a div:hover {
-		 transform: translate(0,-3px);
-		 -webkit-transform: translate(0,-3px);
-		 -o-transform: translate(0,-3px); 
-		 -moz-transform: translate(0,-3px);
-
-		 transition: all .3s ease-in-out;
-		 -webkit-transition: all .3s ease-in-out;
-		 -moz-transition: all .3s ease-in-out;
-		 -o-transition: all .3s ease-in-out;
 	}
 
 	/*footer .twitter-icon { background-image: url('../img/icons/black-social/twitter.png'); }
@@ -146,9 +139,32 @@
 	footer .git-icon:hover { background-image: url('../img/icons/gold-social/github.png'); }
 	footer .mail-icon:hover { background-image: url('../img/icons/gold-social/mail.png'); }*/
 
-	footer .fa {
+	footer .social-container a,
+	footer .social-container:hover a,
+	footer .social-container:hover a:hover {
+		transition: all .1s ease-in-out;
+		-webkit-transition: all .1s ease-in-out;
+		-moz-transition: all .1s ease-in-out;
+		-o-transition: all .1s ease-in-out;
+	}
+
+	footer .social-container a { color: #404040 !important; }
+	footer .social-container:hover a { color: #999 !important; }
+	footer .social-container:hover a:hover { color: #a3876d !important; }
+
+	footer div a {
 		font-size: 24px;
 		margin-bottom: 4px;
+	}
+
+	footer div a:last-child {
+		font-size: 20px;
+    	margin: 3px 0 0;
+	}
+
+	footer div a:last-child div {
+		height: 20px;
+		width: 20px;
 	}
 
 	footer p.copyright {
@@ -157,6 +173,9 @@
 		cursor: default;
 		color: #a3876d;
 	}
+
+
+/* End the desktop view*/
 }
 
 
@@ -172,30 +191,36 @@
 
 		position: fixed;
     	background: white;
-		height: 65px;
+		height: 70px;
 		width: 100vw;
 		margin: 0;
 		padding: 0;
+
+		display: flex;
+	    flex-flow: row nowrap;
+	    justify-content: space-between;
+	    align-items: center;
 	}
 
 	.above-overlay { z-index: 10001; }
 
 	nav a#logo {}
 	nav a > img {
-		height: 45px;
-		width: auto;
-		margin-left: 20px;
+		height: 40px;
+	    width: auto;
+	    margin: 0 0 0 35px;
 	}
 	
 	.menu-burger {
-		 width: 25px;
-		 height: 25px;
-		 cursor: pointer;
-		 display: block;
-		 right: 50px;
-		 margin: 0 20px 0 0;
-		 padding: 10px;
+		width: 45px;
+    	height: 40px;
+		cursor: pointer;
+		display: block;
+		right: 50px;
+		margin: 0 20px 0 0;
+		padding: 10px;
 	}
+
 
 	.bar,
 	.bar:after,
@@ -408,10 +433,12 @@
 @media (max-width: 500px){
 	/*body { overflow: visible; }*/
 
-	nav { height: 60px; }
+	/*nav { height: 70px; }*/
 
 	nav a > img {
-		height: 35px;
+		height: 33px;
+		width: auto;
+    	margin: 0 0 0 25px;
 
 		webkit-transition: all .3s ease-in-out;
 		-moz-transition: all .3s ease-in-out;
@@ -430,14 +457,18 @@
 		transition: all .3s ease-in-out;
 	}
 
-	.bar:before { bottom: 6px; width: 20px;}
-	.bar 		{ width: 20px; }
-	.bar:after  { top: 6px; width: 20px;}
+	.bar:before { bottom: 7px; width: 23px;}
+	.bar 		{ width: 23px; }
+	.bar:after  { top: 7px; width: 23px;}
 
 	.bar.animate:before,
-	.bar.animate:after { width: 20px; }
+	.bar.animate:after { width: 23px; }
 
-	.menu-burger { margin-bottom: 0; }
+	.menu-burger {
+		margin-bottom: 0;
+		/*padding: 12px;*/
+		margin: 0 25px 0 0;
+	}
 
 	.about div.about-header { margin-top: 86px !important; }
 	.about h1.page-title { top: 96px !important; }
