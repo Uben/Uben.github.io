@@ -21,20 +21,36 @@
         <meta name="twitter:creator" content="&#64;&#64;https://twitter.com/BerninAUS">
         <meta name="twitter:site" content="&#64;&#64;BerninUben">
 
-        <title>About Me | Bernin A. Uben</title>
+        <title>About | Bernin A. Uben</title>
         <link rel="shortcut icon" href="img/logo.png">
-
-	    <link rel="stylesheet" href="css/lib/normalize.css">
-	    <link rel="stylesheet" href="css/main.css">
-	    <link rel="stylesheet" href="css/navigation.css">
-	    <link rel="stylesheet" href="css/about.css">
 	    
 		
 		<!-- Put this up here because its supposed to load in before html -->
-	    <script src="js/load-screen.js"></script>
+	    <!-- <script src="js/load-screen.js"></script> -->
 
-		<nav class="above-overlay">
-			<a class="nav-brand above-overlay" href="http://berninuben.com/"><img src="http://berninuben.com/img/uben-logo.png"></a>
+	    <!-- CSS Files -->
+	    <link rel="stylesheet" href="css/lib/normalize.css">
+	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    <link rel="stylesheet" href="css/navigation.css">
+	    <link rel="stylesheet" href="css/about.css">
+	    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Roboto+Mono:300,400" rel="stylesheet">
+
+	    <!-- Javascript Files -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="js/main.js"></script>
+		<script src='js/navigation.js'></script>
+  	</head>
+
+
+
+  	<body>
+  		<!-- BEGIN NAVIGATION -->
+  		<!-- BEGIN NAVIGATION -->
+  		<!-- BEGIN NAVIGATION -->
+
+  		<nav class="above-overlay">
+			<a id='logo' class="nav-brand above-overlay" href="http://berninuben.com/"><img src="http://berninuben.com/img/uben-logo.png"></a>
 			
 			<div class="menu-burger above-overlay">
 				<div class="bar"></div>
@@ -43,19 +59,19 @@
 			<div style="display: none;">
 				<a class="nav-li li-idx" href="http://berninuben.com/">home<span class="gold-dot">.</span></a>
 				<a class="nav-li li-about" href="http://berninuben.com/about">about<span class="gold-dot">.</span></a>
-				<!-- <a class="nav-li li-gear" href="#">gear<span class="gold-dot">.</span></a> -->
-				<!-- <a class="nav-li li-exp" href="#">experience<span class="gold-dot">.</span></a> -->
-				<!-- <a class="nav-li li-blog" href="#">blog<span class="gold-dot">.</span></a> -->
+				<!-- <a class="nav-li li-gear" href="http://berninuben.com/gear">gear<span class="gold-dot">.</span></a> -->
+				<!-- <a class="nav-li li-exp"  href="http://berninuben.com/experience">experience<span class="gold-dot">.</span></a> -->
+				<!-- <a class="nav-li li-blog" href="http://berninuben.com/blog">blog<span class="gold-dot">.</span></a> -->
 			</div>
 
 			<footer style="display: none;">
-				<div>
-					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social twitter-icon"></div> </a>
-					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social ig-icon"></div> </a>
-					<a href="https://github.com/Uben" target="blank"> <div class="social git-icon"></div> </a>
-					<a href="mailto:berninuben@gmail.com"> <div class="social mail-icon"></div> </a>
+				<div class="social-container">
+					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social fa fa-twitter"></div> </a>
+					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social fa fa-instagram"></div> </a>
+					<a href="https://github.com/Uben" target="blank"> <div class="social fa fa-github"></div> </a>
+					<a href="mailto:berninuben@gmail.com"> <div class="social fa fa-paper-plane-o"></div> </a>
 				</div>
-				<p class="copyright">&copy; 2016 BERNIN A. UBEN</p>
+				<p class="copyright">&copy; 2017 BERNIN A. UBEN</p>
 			</footer>
 		</nav>
 
@@ -63,27 +79,30 @@
 			<ul class="menu-options-list">
 				<li class="menu-option"><a href="http://berninuben.com/">home<span>.</span></a></li>
 				<li class="menu-option"><a href="http://berninuben.com/about">about<span>.</span></a></li>
-				<!-- <li class="menu-option"><a href="http://berninuben.com/gear">gear<span>.</span></a></li>
-				<li class="menu-option"><a href="http://berninuben.com/xp">expreience<span>.</span></a></li>
+				<!--
+				<li class="menu-option"><a href="http://berninuben.com/gear">gear<span>.</span></a></li>
+				<li class="menu-option"><a href="http://berninuben.com/experience">expreience<span>.</span></a></li>
 				<li class="menu-option"><a href="http://berninuben.com/blog">blog<span>.</span></a></li> -->
 			</ul>
 
 			<footer>
 				<div>
-					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social twitter-icon"></div> </a>
-					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social ig-icon"></div> </a>
-					<a href="https://github.com/Uben" target="blank"> <div class="social git-icon"></div> </a>
-					<a href="mailto:berninuben@gmail.com"> <div class="social mail-icon"></div> </a>
+					<a href="https://twitter.com/BerninAUS" target="blank"> <div class="social fa fa-twitter"></div> </a>
+					<a href="https://www.instagram.com/berninuben/" target="blank"> <div class="social fa fa-instagram"></div> </a>
+					<a href="https://github.com/Uben" target="blank"> <div class="social fa fa-github"></div> </a>
+					<a href="mailto:berninuben@gmail.com"> <div class="social fa fa-paper-plane-o"></div> </a>
 				</div>
-				<p class="copyright">&copy; 2016 BERNIN A. UBEN</p>
+				<p class="copyright">&copy; 2017 BERNIN A. UBEN</p>
 			</footer>
 		</div>
-
 		<!-- This is for the loading screen animation -->
-		<!-- <section id="load" class="load"><p class="load-logo logo">uben<span class="gold-dot">.<span></p></section> -->
-  	</head>
+		<!-- <section id="load" class="load"><p class="load-logo logo">uben<span class="gold-dot">.</span></p></section> -->
 
-  	<body>
+		<!-- END NAVIGATION  -->
+		<!-- END NAVIGATION  -->
+		<!-- END NAVIGATION  -->
+
+
   		<!-- This is the grey square around the site -->
 		<div id="outline"></div>
 
@@ -129,32 +148,9 @@
 					<p>Major</p>
 					<p class="last-text">Computer Science</p>
 				</div>
-
-				<!-- took out "& I wouldnt mind a Senior Fullstack Engineer position☝🏾 in the future" for now. Feels too cocky 😓" -->
-				<!-- Help me by helping yourself. [hire me.] also sounds too cocky -->
-
-				<!-- <div class="line-container">
-					<div class="scroll-text">Interests</div>
-					<div class="down-line"></div>
-				</div> -->
 			</div>
 
 			<div class="img-banner"></div>
-
-			<!-- <div class="philosophy">
-				<p> philosophy </p>
-				<p>Technology has bettered this country by becoming one of the main driving forces for innovation and I want to be one of the individuals who could potentially help fuel that innovation. It has been something i've loved since I was a kid and was one of the very few things I willingly wanted to learn about during my adolescence. I knew I wanted to do something that would affect the lives of others in a meaningful way. Computers play an enormous role in our lives as it is what allows the possibility of a future with autonomous vehicles, gives the opportunity for new kinds of careers, increases the flow of worldwide information and communication, facilitates the sharing of creative or thought invoking content through the many different mediums available today, and so on. When it comes down to being part of an industry that helps empower others and shapes the future, It is imperative that field be representative of the country's population because if one kind of perspective dominates all, then everyone else will most likely be underserved.
-				</p>
-			</div> -->
-
-
 		</section>
 	</body>
-
-	<script src='js/lib/jquery-3.1.0.min.js'></script>
-	<script src='js/navigation.js'></script>
-	<script src='js/main.js'></script>
-	<!-- <script src="js/about.js"></script> -->
-	
-  </body>
 </html>
