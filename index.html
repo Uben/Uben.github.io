@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    	<meta charset="UTF-8">
+        <title>Uben | Software Developer</title>
+        <link href="http://berninuben.com/img/icons/uben_logo.png" rel="shortcut icon">
+		<link href="http://berninuben.com/img/icons/uben_logo.png" rel="apple-touch-icon-precomposed">
+
         <meta name="author" content="Bernin Uben">
         <meta name="title" content="Bernin Uben | Software Developer" />
         <meta name="description" content="Bernin Alejandro Uben is an aspiring New York City/New Jersey, NYC/NJ, based fullstack software developer working mostly with web technologies" />
         <meta name="keywords" content="HTML, CSS, Javascript, Ruby, Rails, ROR, Ruby on Rails, C++, Web Development, Engineer, Developer, Software">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
 
         <meta property="og:locale" content="en_US"/>
         <meta property="og:url" content="http://www.berninuben.com/" />
@@ -21,23 +25,20 @@
         <meta name="twitter:creator" content="&#64;&#64;https://twitter.com/BerninAUS">
         <meta name="twitter:site" content="&#64;&#64;BerninUben">
 
-        <title>Uben | Software Developer</title>
-        <link rel="shortcut icon" href="img/logo.png">
-
 	    <!-- CSS Files -->
 	    <link rel="stylesheet" href="css/lib/normalize.css">
 	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Roboto+Mono:300,400" rel="stylesheet">
 	    <link rel="stylesheet" href="css/main.css">
 	    <link rel="stylesheet" href="css/navigation.css">
-	    <link href="https://fonts.googleapis.com/css?family=Heebo:700|Roboto+Mono:300,400" rel="stylesheet">
 
 	    <!-- Javascript Files -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	    <script src="js/main.js"></script>
-		<script src='js/navigation.js'></script>
+		<script src="js/lib/typed.js"></script>
+
+		<!-- Sphere JS Files -->
 		<script src='js/lib/dat-gui-v2.min.js'></script>
 		<script src='js/lib/stats-1.0.min.js'></script>
-		<script src="js/lib/typed.js"></script>
 		<script src="js/canvas.js"></script>
   	</head>
 
@@ -46,9 +47,10 @@
   		<!-- BEGIN NAVIGATION -->
   		<!-- BEGIN NAVIGATION -->
   		<!-- BEGIN NAVIGATION -->
-
   		<nav class="above-overlay">
-			<a id='logo' class="nav-brand above-overlay" href="http://berninuben.com/"><img src="http://berninuben.com/img/uben-logo.png"></a>
+			<a id="logo" class="nav-brand above-overlay" href="http://berninuben.com/">
+				<img src="http://berninuben.com/img/icons/uben-logo.png">
+			</a>
 			
 			<div class="menu-burger above-overlay">
 				<div class="bar"></div>
@@ -77,8 +79,7 @@
 			<ul class="menu-options-list">
 				<li class="menu-option"><a href="http://berninuben.com/">home<span>.</span></a></li>
 				<li class="menu-option"><a href="http://berninuben.com/about">about<span>.</span></a></li>
-				<!--
-				<li class="menu-option"><a href="http://berninuben.com/gear">gear<span>.</span></a></li>
+				<!-- <li class="menu-option"><a href="http://berninuben.com/gear">gear<span>.</span></a></li>
 				<li class="menu-option"><a href="http://berninuben.com/experience">expreience<span>.</span></a></li>
 				<li class="menu-option"><a href="http://berninuben.com/blog">blog<span>.</span></a></li> -->
 			</ul>
@@ -93,14 +94,9 @@
 				<p class="copyright">&copy; 2017 BERNIN A. UBEN</p>
 			</footer>
 		</div>
-		<!-- This is for the loading screen animation -->
-		<!-- <section id="load" class="load"><p class="load-logo logo">uben<span class="gold-dot">.</span></p></section> -->
-
 		<!-- END NAVIGATION  -->
 		<!-- END NAVIGATION  -->
 		<!-- END NAVIGATION  -->
-
-
 
 		<canvas id="nCanvasRender"></canvas>
 		
@@ -108,23 +104,49 @@
 		<div id="outline"></div>
 
 		<section id="container">
-			<h1 class="title">bernin a. uben</h1>
+			<h1 class="title">Bernin A. Uben</h1>
 			<h6 class="title subtitle"><span></span></h6>
 		</section>
 			
-		<a id="current" href="http://twowords.co/" target="blank">developer intern :: @twowords<span class="gold-dot">.<span></a>
-	
+		<a id="current" href="http://twowords.co/" target="blank">web developer :: @twowords<span class="gold-dot">.<span></a>
+
+
+
+
+
+
+
 		<script>
-		  $(function(){
-		      $(".subtitle span").typed({
-		        strings: ["Computer Science", "Rubyist", "Software Developer"],
-		        typeSpeed: 50,
-		        backSpeed: 0,
-		        startDelay: 1000,
-		        backDelay: 1000
-		      });
-		  });
-		</script>
+
+			// For typed.js
+			$(function(){
+				$(".subtitle span").typed({
+				strings: ["Computer Science", "Runner", "NJ-based Web Developer"],
+				typeSpeed: 50,
+				backSpeed: 0,
+				startDelay: 1000,
+				backDelay: 1000
+				});
+			});
+
+			// For Mobile navigaton
+			$(document).ready(function(){
+				$('.menu-burger').click( function() {
+					$('.bar').toggleClass('animate'); // Creates the Hamburger -> X Animation on first click
+					$('.overlay').fadeToggle(100, 'linear'); // toggles open the nav overlay // Optionally could change fadeIn & fadeut to both toggleClass
+					$('.menu-options-list').delay(100).addClass('slideDownIn');	// Rapidly fades option in upward into place
+				});
+			});
+
+			// Google Analytics
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-100469556-1', 'auto');
+			ga('send', 'pageview');
+  		</script>
 
   	</body>
 </html>
