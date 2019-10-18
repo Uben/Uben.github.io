@@ -1,0 +1,30 @@
+@import "_colors.scss";
+
+body {
+	margin: 0;
+	padding: 0 75px;
+	background-color: $primary;
+
+	> div {
+		#gatsby-focus-wrapper {
+
+			* {
+				color: $alt;
+				font-weight: 400;
+				font-family: 'Roboto Mono';
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: 900;
+				font-family: 'Playfair Display';
+				margin: 0 0 10px 0;
+			}
+
+			#site-wrapper {
+				width: 100%;
+				margin: 100px 0 0 0;
+			}
+
+		}
+	}
+}
