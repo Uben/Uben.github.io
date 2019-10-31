@@ -11,7 +11,11 @@ class Layout extends React.PureComponent {
 		return (
 			<div id="site-wrapper" className={`page-${this.props.page}`}>
 				<Navigation />
-				{this.props.children}
+				
+				<main id="content">
+					{this.props.children}
+				</main>
+
 				<Footer />
 			</div>
 		)
