@@ -7,12 +7,14 @@ class Navigation extends React.PureComponent {
 	render(){
 		return(
 			<nav id="navbar">
-				<Link to="/"> <h5 className="logo"> uben </h5> </Link>
-				<ul>
-					<li> <Link to="/"> work </Link> </li>
-					{/* <li> <Link to="/blog"> blog </Link> </li> */}
-					<li> <Link to="/"> contact </Link> </li>
-				</ul>
+				<div className="inner">
+					<Link to="/"> <h5 className="logo"> uben </h5> </Link>
+					<ul>
+						<li> <Link to="/work"> work </Link> </li>
+						{/* <li> <Link to="/blog"> blog </Link> </li> */}
+						<li> <Link to="/"> contact </Link> </li>
+					</ul>
+				</div>
 			</nav>
 		);
 	}

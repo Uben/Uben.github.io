@@ -1,18 +1,26 @@
 @import "_colors.scss";
 
 nav#navbar {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	margin: 0 75px;
+	
+	padding: 0 0 0 0;
+    margin: 30px 75px 0 75px;
 
 	width: calc(100% - 150px); // 100% - 75px padding on each side 
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: flex-end;
+	
+	.inner {
+		display: inline-flex;
+		flex-flow: row nowrap;
+		align-items: flex-end;
 
-	padding: 50px 0 20px;
+		padding: 20px 20px 20px 0;
+		margin: 0;
+
+		background-color: $primary;
+	}
 
 	a {
 		text-decoration: none;
