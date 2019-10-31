@@ -8,10 +8,11 @@ class Navigation extends React.PureComponent {
 		return(
 			<nav id="navbar">
 				<Link to="/"> <h5 className="logo"> uben </h5> </Link>
-				{/* <ul>
-					<li> <Link to="/"> home </Link> </li>
-					<li> <Link to="/blog"> blog </Link> </li>
-				</ul> */}
+				<ul>
+					<li> <Link to="/"> work </Link> </li>
+					{/* <li> <Link to="/blog"> blog </Link> </li> */}
+					<li> <Link to="/"> contact </Link> </li>
+				</ul>
 			</nav>
 		);
 	}

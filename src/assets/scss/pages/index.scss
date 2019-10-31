@@ -3,13 +3,19 @@
 .page-home {
 
 	main#content {
-		min-height: calc(75vh - 100px); // vh - height of navigation
+		display: flex;
+		flex-flow: row nowrap;
+		min-height: calc(100vh - 150px); // vh - (height of navigation + space from bottom margin line)
 
 		> div {
-			max-width: 600px;
+			width: 650px;
 
 			&#info {
-				margin: 25vh 0 0 0;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+
+				margin: 0 50px 0 0;
 
 				.name {
 					font-size: 55px;
@@ -33,10 +39,7 @@
 					}
 				}
 
-				.about {
-					line-height: 32px;
-					font-size: 14px;
-				}
+				.about {}
 
 				#social {
 					display: flex;
@@ -62,8 +65,7 @@
 						}
 					}
 				}
-			}			
+			}
 		}
 	}
-
 }
