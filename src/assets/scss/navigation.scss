@@ -12,7 +12,11 @@ nav#navbar {
     margin: 30px 75px 0 75px;
 
 	width: calc(100% - 150px); // 100% - 75px padding on each side 
-	
+
+	@media only screen and (max-width: 769px) {
+		margin: 30px 35px 0 35px;
+	}
+
 	.inner {
 		display: inline-flex;
 		flex-flow: row nowrap;

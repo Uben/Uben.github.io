@@ -12,7 +12,6 @@
 
 			&#info {
 				.name {
-					font-size: 55px;
 					display: inline-block;
 				}
 
@@ -32,6 +31,10 @@
 						width: 100px;
 						margin: 50px 0;
 						border-bottom: 1px dotted $gray;
+
+						@media only screen and (max-width: 769px) {
+							margin: 25px 0;
+						}
 					}
 				}
 
@@ -49,6 +52,10 @@
 
 					> p {
 						display: inline-block;
+
+						@media only screen and (max-width: 769px) {
+							margin-top: 0;
+						}
 
 						span {
 							font-weight: 700;
@@ -87,6 +94,10 @@
 							max-width: 100%;
 							object-fit: contain;
 						}
+					}
+
+					@media only screen and (max-width: 769px) {
+						margin: 25px 0 0 0;
 					}
 				}
 			}

@@ -5,6 +5,10 @@ body {
 	padding: 0 75px 125px 75px;
 	background-color: $primary;
 
+	@media only screen and (max-width: 769px) {
+		padding: 0 35px 50px 35px;
+	}
+
 	> div {
 		#gatsby-focus-wrapper {
 
@@ -16,7 +20,7 @@ body {
 
 			h1, h2, h3, h4, h5, h6 {
 				font-weight: 900;
-				font-family: 'Playfair Display';
+				font-family: 'Playfair Display' !important;
 				margin: 0 0 10px 0;
 
 				background: -webkit-gradient(linear, left top, right top, from($alt), to($min));
@@ -28,33 +32,16 @@ body {
 				box-decoration-break: clone;
 			}
 
-			h1 {
-				font-size: 55px;
-			}
-
-			h2 {
-				font-size: 40px;
-			}
-
-			h3 {
-				font-size: 36px;
-			}
-
-			h4 {
-				font-size: 32px;
-			}
-
-			h5 {
-				font-size: 24px;
-			}
-
-			h6 {
-				font-size: 18px;
-			}
+			h1 { font-size: 55px; }
+			h2 { font-size: 40px; }
+			h3 { font-size: 36px; }
+			h4 { font-size: 32px; }
+			h5 { font-size: 24px; }
+			h6 { font-size: 18px; }
 
 			p {
 				line-height: 28px;
-    			font-size: 13px;
+				font-size: 13px;
 			}
 
 			a {
@@ -69,6 +56,26 @@ body {
 				&:hover {
 					color: $alt;
 				}
+			}
+
+			@media only screen and (max-width: 769px) {
+				h1 { font-size: 45px; }
+				h2 { font-size: 32px; }
+				h3 { font-size: 28px; }
+				h4 { font-size: 24px; }
+				h5 { font-size: 21px; }
+				h6 { font-size: 15px; }
+				p  { font-size: 11px; }
+			}
+
+			@media only screen and (max-width: 400px) {
+				h1 { font-size: 36px; }
+				h2 { font-size: 27px; }
+				h3 { font-size: 24px; }
+				h4 { font-size: 21px; }
+				h5 { font-size: 18px; }
+				h6 { font-size: 14px; }
+				p  { font-size: 11px; }
 			}
 		}
 	}

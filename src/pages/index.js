@@ -17,19 +17,19 @@ class Home extends React.PureComponent {
 					<h1 className="name"> Bernin Uben </h1>
 					<p className="title"> software engineer </p>
 					<div className="divider" />
-					<p className="about"> Yo. Im a Software Engineer, self-taught Web Designer, & undergraduate Computer Science student living in New Jersey. If you want to know more about me or if youʼre a Nigerian prince who wants to offer me a lot of money, feel free to <Link to="/">contact me</Link>. This is my place within the IPv4 space. </p>
+					<p className="about"> Yo. Im a Software Engineer, self-taught Web Designer, & undergraduate Computer Science student living in New Jersey. If you want to know more about me or if youʼre a Nigerian prince who wants to offer me a lot of money, feel free to <a href="mailto:berninuben@gmail.com">contact me</a>. This is my place within the IPv4 space. </p>
 					<div className="work-status">
-						<p> <Link to="/"> Currently <span> open </span> to new opportunities.</Link> </p>
+						<p> Currently <span> open </span> to new opportunities. </p>
 					</div>
 
 					<div id="social">
-						<Link className="icon no-underline" to="/">
+						<a className="icon no-underline" href="mailto:berninuben@gmail.com">
 							<img src={mailSVG} alt="mail icon"/>
-						</Link>
-						<a className="icon no-underline" href="https://github.com/uben" target="_blank">
+						</a>
+						<a className="icon no-underline" href="https://github.com/uben" target="_blank" rel="noopener noreferrer">
 							<img src={githubSVG} alt="github icon"/>
 						</a>
-						<a className="icon no-underline" href="https://linkedin.com/in/berninuben" target="_blank">
+						<a className="icon no-underline" href="https://linkedin.com/in/berninuben" target="_blank" rel="noopener noreferrer">
 							<img src={linkedinSVG} alt="linkedin icon"/>
 						</a>
 					</div>
