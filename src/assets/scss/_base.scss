@@ -2,7 +2,7 @@
 
 body {
 	margin: 0;
-	padding: 0 75px;
+	padding: 0 75px 125px 75px;
 	background-color: $primary;
 
 	> div {
@@ -18,6 +18,14 @@ body {
 				font-weight: 900;
 				font-family: 'Playfair Display';
 				margin: 0 0 10px 0;
+
+				background: -webkit-gradient(linear, left top, right top, from($alt), to($min));
+				background: linear-gradient(90deg, $alt, $min);
+				
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				-webkit-box-decoration-break: clone;
+				box-decoration-break: clone;
 			}
 
 			h1 {
@@ -47,6 +55,20 @@ body {
 			p {
 				line-height: 28px;
     			font-size: 13px;
+			}
+
+			a {
+				color: $min;
+				text-decoration: none;
+				border-bottom: 1px dotted #c8c8c8;
+
+				&.no-underline {
+					border-bottom: none !important;
+				}
+
+				&:hover {
+					color: $alt;
+				}
 			}
 		}
 	}

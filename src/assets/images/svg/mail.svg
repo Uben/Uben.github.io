@@ -1,3 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="30" viewBox="0 0 36 30">
-  <polygon fill="#1F567A" points="0 30 35.143 15 0 0 0 11.667 25.102 15 0 18.333"/>
+  <defs>
+    <linearGradient id="send-button-a" x1="100%" x2="0%" y1="86.437%" y2="13.563%">
+      <stop offset="0%" stop-color="#D0EDF1"/>
+      <stop offset="66.229%" stop-color="#1F567A"/>
+      <stop offset="100%" stop-color="#1F567A"/>
+    </linearGradient>
+  </defs>
+  <polygon fill="url(#send-button-a)" points="0 30 35.143 15 0 0 0 11.667 25.102 15 0 18.333"/>
 </svg>

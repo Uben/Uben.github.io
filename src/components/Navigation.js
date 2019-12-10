@@ -8,7 +8,9 @@ class Navigation extends React.PureComponent {
 		return(
 			<nav id="navbar">
 				<div className="inner">
-					<Link to="/"> <h5 className="logo"> uben </h5> </Link>
+					<Link to="/" className="no-underline">
+						<h5 className="logo"> uben </h5>
+					</Link>
 					<ul>
 						<li> <Link to="/work"> work </Link> </li>
 						{/* <li> <Link to="/blog"> blog </Link> </li> */}
