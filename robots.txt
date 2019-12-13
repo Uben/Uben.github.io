@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://berninuben.com/sitemap.xml
+Host: https://berninuben.com
