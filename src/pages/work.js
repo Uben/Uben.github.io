@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { Helmet } from "react-helmet";
 
 import Layout from '../components/Layout';
@@ -16,32 +17,28 @@ class Work extends React.PureComponent {
 			<Layout page="work">
 				<Helmet>
 					<meta charset="utf-8" />
+					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+					<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<meta name="robots" content="index, follow" />
+					<meta name="HandheldFriendly" content="True" />
 
 					<title> Work | Bernin Uben </title>
-
-					<meta name="HandheldFriendly" content="True" />
-					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 					<meta name="description" content="Previous Work - Bernin Uben's Portfolio Site" />
+					<link rel="canonical" href="https://berninuben.com/work" />
 					{/* <link rel="shortcut icon" href="/favicon.png" type="image/png" /> */}
-					<link rel="canonical" href="https://berninuben.com" />
     
+    				<meta property="og:locale" content="en_US"/>
 					<meta property="og:site_name" content="Work | Bernin Uben" />
 					<meta property="og:type" content="website" />
 					<meta property="og:title" content="Work | Bernin Uben" />
 					<meta property="og:description" content="Previous Work - Bernin Uben's Portfolio Site" />
 					<meta property="og:url" content="https://berninuben.com/work" />
-					{/* <meta property="og:image" content="https://www.matthewgerstman.com/content/images/2019/01/Cover-photo.jpg" /> */}
 					
-					{/* <meta name="twitter:card" content="summary_large_image" /> */}
-					<meta name="twitter:title" content="Work | Bernin Uben" />
-					<meta name="twitter:description" content="Previous Work - Bernin Uben's Portfolio Site" />
-					<meta name="twitter:url" content="https://www.berninuben.com/work" />
-					{/* <meta name="twitter:image" content="https://www.matthewgerstman.com/content/images/2019/01/Cover-photo.jpg" /> */}
+					<meta name="twitter:card" content="summary" />
 					<meta name="twitter:site" content="@BerninAUS" />
-					{/* <meta property="og:image:width" content="2000" /> */}
-					{/* <meta property="og:image:height" content="1369" /> */}
+					<meta name="twitter:description" content="Bernin Uben's Portfolio Site" />
+					<meta name="twitter:title" content="Work | Bernin Uben" />
 				</Helmet>
 
 				<div id="intro">
@@ -59,7 +56,7 @@ class Work extends React.PureComponent {
 							<h5 class="title"> Library of Standards </h5>
 							<p class="subtitle"> empathee <span> &bull; </span> 2018 </p>
 							<p class="desc"> The Library of Standards a component of the empathee platform built with React.js, Koa.js/Node, &amp; MongoDB. With a library for coaching employees with relevant content to help improve the patient experience, empathee is a patient focused digital surveying tool. </p>
-							<a href="https://empathee.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</a>
+							<OutboundLink href="https://empathee.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</OutboundLink>
 						</div>
 					</div>
 
@@ -72,7 +69,7 @@ class Work extends React.PureComponent {
 							<h5 class="title"> Stub Boxoffice </h5>
 							<p class="subtitle"> Private <span> &bull; </span> 2019 </p>
 							<p class="desc"> Stub Boxoffice is a reseller marketplace for ticketed events. Rebuilt on Express.js/Node, MySQL, and the TicketNetwork SOAP api. Improved page loads from 4-5 seconds with PHP to ~1 second with Node.js. Service served & cached through NGiNX acting as a reverse proxy. </p>
-							<a href="https://stubboxoffice.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</a>
+							<OutboundLink href="https://stubboxoffice.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</OutboundLink>
 						</div>
 					</div>
 
@@ -85,7 +82,7 @@ class Work extends React.PureComponent {
 							<h5 class="title"> C Webserver </h5>
 							<p class="subtitle"> NJIT CS288 <span> &bull; </span> 2017 </p>
 							<p class="desc"> An implementation of a simple HTTP webserver. The webserver can successfully respond to page requests initiated from a web browser along with the appropriate HTTP status code. With this project I gained a deeper understanding of: how to handle network connections in Linux/C, the client-server model, the HTTP protocol. </p>
-							<a href="https://github.com/Uben/C-Webserver" title="Github" class="btn-highlight" target="_blank" rel="noopener noreferrer">Github</a>
+							<OutboundLink href="https://github.com/Uben/C-Webserver" title="Github" class="btn-highlight" target="_blank" rel="noopener noreferrer">Github</OutboundLink>
 						</div>
 					</div>
 
@@ -98,7 +95,7 @@ class Work extends React.PureComponent {
 							<h5 class="title"> Athletix - United Kingdom </h5>
 							<p class="subtitle"> Athletix <span> &bull; </span> 2019 </p>
 							<p class="desc"> A seperate ecommerce site built on Wordpress for the launch of Athletix in the United Kingdom. Themed Woocommerce templates to match designs of the Home, Shop, About, CBD Oil, & Contact Pages. Athletix is a Broad Spectrum CBD Oil For Athletes. </p>
-							<a href="https://athletixcbd.co.uk/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</a>
+							<OutboundLink href="https://athletixcbd.co.uk/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</OutboundLink>
 						</div>
 					</div>
 
@@ -111,7 +108,7 @@ class Work extends React.PureComponent {
 							<h5 class="title"> Corsair Construction </h5>
 							<p class="subtitle"> Corsair Construction <span> &bull; </span> 2019 </p>
 							<p class="desc"> Built portfolio site based on Wordpress for Corsair Construction LLC. I had full creative control on this site from site design to development. (About page & other styles have been updated after my final push. Site layout might break on mobile.) </p>
-							<a href="https://corsairconstruction.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</a>
+							<OutboundLink href="https://corsairconstruction.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</OutboundLink>
 						</div>
 					</div>
 				</div>

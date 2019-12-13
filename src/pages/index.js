@@ -1,5 +1,6 @@
 import React from 'react';
 // import { Link } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { Helmet } from "react-helmet";
 
 import Layout from '../components/Layout';
@@ -16,32 +17,28 @@ class Home extends React.PureComponent {
 			<Layout page="home">
 				<Helmet>
 					<meta charset="utf-8" />
+					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+					<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<meta name="robots" content="index, follow" />
+					<meta name="HandheldFriendly" content="True" />
 
 					<title> Bernin Uben </title>
-
-					<meta name="HandheldFriendly" content="True" />
-					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 					<meta name="description" content="Bernin Uben's Portfolio Site. Software Engineering && Photography." />
-					{/* <link rel="shortcut icon" href="/favicon.png" type="image/png" /> */}
 					<link rel="canonical" href="https://berninuben.com/" />
+					{/* <link rel="shortcut icon" href="/favicon.png" type="image/png" /> */}
     
+    				<meta property="og:locale" content="en_US"/>
 					<meta property="og:site_name" content="Bernin Uben" />
 					<meta property="og:type" content="website" />
 					<meta property="og:title" content="Bernin Uben" />
-					<meta property="og:description" content="Bernin Uben's Portfolio Site. Software Engineering && Photography." />
+					<meta property="og:description" content="Bernin Uben's Portfolio Site" />
 					<meta property="og:url" content="https://berninuben.com/" />
-					{/* <meta property="og:image" content="https://www.matthewgerstman.com/content/images/2019/01/Cover-photo.jpg" /> */}
 					
-					{/* <meta name="twitter:card" content="summary_large_image" /> */}
-					<meta name="twitter:title" content="Bernin Uben" />
-					<meta name="twitter:description" content="Bernin Uben's Portfolio Site. Software Engineering && Photography." />
-					<meta name="twitter:url" content="https://www.berninuben.com/" />
-					{/* <meta name="twitter:image" content="https://www.matthewgerstman.com/content/images/2019/01/Cover-photo.jpg" /> */}
+					<meta name="twitter:card" content="summary" />
 					<meta name="twitter:site" content="@BerninAUS" />
-					{/* <meta property="og:image:width" content="2000" /> */}
-					{/* <meta property="og:image:height" content="1369" /> */}
+					<meta name="twitter:description" content="Bernin Uben's Portfolio Site" />
+					<meta name="twitter:title" content="Bernin Uben" />
 				</Helmet>
 
 				<div id="info">
@@ -57,12 +54,12 @@ class Home extends React.PureComponent {
 						<a className="icon no-underline" href="mailto:berninuben@gmail.com">
 							<img src={mailSVG} alt="mail icon"/>
 						</a>
-						<a className="icon no-underline" href="https://github.com/uben" target="_blank" rel="noopener noreferrer">
+						<OutboundLink className="icon no-underline" href="https://github.com/uben" target="_blank" rel="noopener noreferrer">
 							<img src={githubSVG} alt="github icon"/>
-						</a>
-						<a className="icon no-underline" href="https://linkedin.com/in/berninuben" target="_blank" rel="noopener noreferrer">
+						</OutboundLink>
+						<OutboundLink  className="icon no-underline" href="https://linkedin.com/in/berninuben" target="_blank" rel="noopener noreferrer">
 							<img src={linkedinSVG} alt="linkedin icon"/>
-						</a>
+						</OutboundLink>
 					</div>
 				</div>
 			</Layout>
