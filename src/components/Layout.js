@@ -22,6 +22,11 @@ class Layout extends React.PureComponent {
 					<meta name="robots" content="index, follow" />
 					<meta name="HandheldFriendly" content="True" />
 					<link rel="shortcut icon" href={ siteIcon } type="image/png" />
+
+					{/* <!-- Chrome, Firefox OS and Opera --> */}
+					<meta name="theme-color" content="#1f567a" />
+					{/* <!-- iOS Safari --> */}
+					<meta name="apple-mobile-web-app-status-bar-style" content="#1f567a" />
     
     				<meta property="og:locale" content="en_US"/>
 					<meta property="og:type" content="website" />
