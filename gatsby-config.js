@@ -6,10 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    siteUrl: 'https://berninuben.com/'
+  },
   plugins: [
-  `gatsby-plugin-sass`,
-  `gatsby-plugin-react-helmet`,
-  {
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-cname`,
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
