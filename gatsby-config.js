@@ -6,5 +6,16 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+  `gatsby-plugin-sass`,
+  {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          { family: `Playfair Display` },
+          { family: `Roboto Mono`, variants: [`400`] },
+        ],
+      },
+    },
+  ],
 }
