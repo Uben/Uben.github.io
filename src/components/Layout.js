@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 
 import Navigation from './Navigation';
 import Footer from './Footer';
+
+import siteIcon from '../assets/images/site-icon.png';
 
 import '../assets/scss/_base.scss';
 import '../assets/scss/layout.scss';
@@ -11,6 +14,22 @@ class Layout extends React.PureComponent {
 	render() {
 		return (
 			<div id="site-wrapper" className={`page-${this.props.page}`}>
+				<Helmet>
+					<meta charset="utf-8" />
+					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+					<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<meta name="robots" content="index, follow" />
+					<meta name="HandheldFriendly" content="True" />
+					<link rel="shortcut icon" href={ siteIcon } type="image/png" />
+    
+    				<meta property="og:locale" content="en_US"/>
+					<meta property="og:type" content="website" />
+
+					<meta name="twitter:card" content="summary" />
+					<meta name="twitter:site" content="@BerninAUS" />
+				</Helmet>
+
 				<div id="site-outline"/>
 				<Navigation />
 				

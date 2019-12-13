@@ -16,29 +16,17 @@ class Home extends React.PureComponent {
 		return(
 			<Layout page="home">
 				<Helmet>
-					<meta charset="utf-8" />
-					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-					<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="robots" content="index, follow" />
-					<meta name="HandheldFriendly" content="True" />
-
 					<title> Bernin Uben </title>
 					<meta name="description" content="Bernin Uben's Portfolio Site. Software Engineering && Photography." />
 					<link rel="canonical" href="https://berninuben.com/" />
-					{/* <link rel="shortcut icon" href="/favicon.png" type="image/png" /> */}
-    
-    				<meta property="og:locale" content="en_US"/>
+
 					<meta property="og:site_name" content="Bernin Uben" />
-					<meta property="og:type" content="website" />
 					<meta property="og:title" content="Bernin Uben" />
 					<meta property="og:description" content="Bernin Uben's Portfolio Site" />
 					<meta property="og:url" content="https://berninuben.com/" />
-					
-					<meta name="twitter:card" content="summary" />
-					<meta name="twitter:site" content="@BerninAUS" />
-					<meta name="twitter:description" content="Bernin Uben's Portfolio Site" />
+
 					<meta name="twitter:title" content="Bernin Uben" />
+					<meta name="twitter:description" content="Bernin Uben's Portfolio Site" />
 				</Helmet>
 
 				<div id="info">

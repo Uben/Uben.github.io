@@ -16,29 +16,17 @@ class Work extends React.PureComponent {
 		return(
 			<Layout page="work">
 				<Helmet>
-					<meta charset="utf-8" />
-					<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-					<meta name="viewport" content="width=device-width, initial-scale=1" />
-					<meta name="robots" content="index, follow" />
-					<meta name="HandheldFriendly" content="True" />
-
 					<title> Work | Bernin Uben </title>
 					<meta name="description" content="Previous Work - Bernin Uben's Portfolio Site" />
 					<link rel="canonical" href="https://berninuben.com/work" />
-					{/* <link rel="shortcut icon" href="/favicon.png" type="image/png" /> */}
     
-    				<meta property="og:locale" content="en_US"/>
 					<meta property="og:site_name" content="Work | Bernin Uben" />
-					<meta property="og:type" content="website" />
 					<meta property="og:title" content="Work | Bernin Uben" />
 					<meta property="og:description" content="Previous Work - Bernin Uben's Portfolio Site" />
 					<meta property="og:url" content="https://berninuben.com/work" />
-					
-					<meta name="twitter:card" content="summary" />
-					<meta name="twitter:site" content="@BerninAUS" />
-					<meta name="twitter:description" content="Bernin Uben's Portfolio Site" />
+
 					<meta name="twitter:title" content="Work | Bernin Uben" />
+					<meta name="twitter:description" content="Previous Work - Bernin Uben's Portfolio Site" />
 				</Helmet>
 
 				<div id="intro">
