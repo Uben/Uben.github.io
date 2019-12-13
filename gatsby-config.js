@@ -8,11 +8,12 @@ module.exports = {
   /* Your site config here */
   plugins: [
   `gatsby-plugin-sass`,
+  `gatsby-plugin-react-helmet`,
   {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          { family: `Playfair Display` },
+          { family: `Playfair Display`, variants: [`700`, `900`] },
           { family: `Roboto Mono`, variants: [`400`] },
         ],
       },

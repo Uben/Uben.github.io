@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 
 import Layout from '../components/Layout';
 
@@ -13,6 +14,36 @@ class Work extends React.PureComponent {
 	render() {
 		return(
 			<Layout page="work">
+				<Helmet>
+					<meta charset="utf-8" />
+					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+					<title> Work | Bernin Uben </title>
+
+					<meta name="HandheldFriendly" content="True" />
+					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+					<meta name="description" content="Previous Work - Bernin Uben's Portfolio Site" />
+					{/* <link rel="shortcut icon" href="/favicon.png" type="image/png" /> */}
+					<link rel="canonical" href="https://berninuben.com" />
+    
+					<meta property="og:site_name" content="Work | Bernin Uben" />
+					<meta property="og:type" content="website" />
+					<meta property="og:title" content="Work | Bernin Uben" />
+					<meta property="og:description" content="Previous Work - Bernin Uben's Portfolio Site" />
+					<meta property="og:url" content="https://berninuben.com/work" />
+					{/* <meta property="og:image" content="https://www.matthewgerstman.com/content/images/2019/01/Cover-photo.jpg" /> */}
+					
+					{/* <meta name="twitter:card" content="summary_large_image" /> */}
+					<meta name="twitter:title" content="Work | Bernin Uben" />
+					<meta name="twitter:description" content="Previous Work - Bernin Uben's Portfolio Site" />
+					<meta name="twitter:url" content="https://www.berninuben.com/work" />
+					{/* <meta name="twitter:image" content="https://www.matthewgerstman.com/content/images/2019/01/Cover-photo.jpg" /> */}
+					<meta name="twitter:site" content="@BerninAUS" />
+					{/* <meta property="og:image:width" content="2000" /> */}
+					{/* <meta property="og:image:height" content="1369" /> */}
+				</Helmet>
+
 				<div id="intro">
 					<h1> Work </h1>
 					<p> This is a small selection of work I have completed over the past couple of years consiting of anything from work to personal/school projects. Take a look at what I have put my head down into. </p>
