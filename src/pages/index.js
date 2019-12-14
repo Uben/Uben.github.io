@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { Helmet } from "react-helmet";
 
@@ -17,7 +16,7 @@ class Home extends React.PureComponent {
 			<Layout page="home">
 				<Helmet>
 					<title> Bernin Uben </title>
-					<meta name="description" content="Bernin Uben's Portfolio Site. Software Engineering && Photography." />
+					<meta name="description" content="Bernin Uben's Portfolio Site" />
 					<link rel="canonical" href="https://berninuben.com/" />
 
 					<meta property="og:site_name" content="Bernin Uben" />

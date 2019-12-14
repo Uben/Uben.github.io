@@ -2,9 +2,9 @@
 
 body {
 	margin: 0;
-	padding: 0 75px 125px 75px;
+	padding: 0 75px 55px 75px;
 	background-color: $primary;
-	background-image: url('../images/png/bg-lines.png');
+	background-image: url('../../../static/background-grid.png');
 	background-repeat: repeat;
 
 	* {
@@ -53,7 +53,7 @@ body {
 			h5 { font-size: 24px; }
 			h6 { font-size: 18px; }
 
-			p {
+			p, li {
 				line-height: 28px;
 				font-size: 13px;
 			}
@@ -72,6 +72,12 @@ body {
 				}
 			}
 
+			ul, ol {
+				li {
+					list-style: square;
+				}
+			}
+
 			@media only screen and (max-width: 769px) {
 				h1 { font-size: 45px; }
 				h2 { font-size: 32px; }
@@ -79,7 +85,7 @@ body {
 				h4 { font-size: 24px; }
 				h5 { font-size: 21px; }
 				h6 { font-size: 18px; }
-				p  { font-size: 11px; }
+				p, li { font-size: 12px; }
 			}
 
 			@media only screen and (max-width: 400px) {
@@ -89,7 +95,7 @@ body {
 				h4 { font-size: 21px; }
 				h5 { font-size: 18px; }
 				h6 { font-size: 16px; }
-				p  { font-size: 12px; }
+				p, li { font-size: 12px; }
 			}
 		}
 	}

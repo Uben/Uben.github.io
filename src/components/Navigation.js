@@ -13,6 +13,7 @@ class Navigation extends React.PureComponent {
 					</Link>
 					<ul>
 						<li> <Link to="/work"> work </Link> </li>
+						<li> <Link to="/experience"> experience </Link> </li>
 						{/* <li> <Link to="/blog"> blog </Link> </li> */}
 						{/* <li> <Link to="/"> contact </Link> </li> */}
 					</ul>

@@ -47,6 +47,7 @@ nav#navbar {
 		list-style: none;
 
 		li {
+			list-style: none !important;
 
 			&:not(:first-of-type) {
 				margin: 0 0 0 35px;

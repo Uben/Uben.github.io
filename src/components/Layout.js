@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
-import siteIcon from '../assets/images/site-icon.png';
+import siteIcon from '../../static/favicon.png';
 
 import '../assets/scss/_base.scss';
 import '../assets/scss/layout.scss';
