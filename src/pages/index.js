@@ -32,7 +32,7 @@ class Home extends React.PureComponent {
 					<h1 className="name"> Bernin Uben </h1>
 					<p className="title"> software engineer </p>
 					<div className="divider" />
-					<p className="about"> Yo. Im a Software Engineer, self-taught Web Designer, & undergraduate Computer Science student living in New Jersey. If you want to know more about me or if youʼre a Nigerian prince who wants to offer me a lot of money, feel free to <a href="mailto:berninuben@gmail.com">contact me</a>. This is my place within the IPv4 space. </p>
+					<p className="about"> Yo. Im a Software Engineer living in New Jersey. If you want to know more about me or if youʼre a Nigerian prince who wants to offer me a lot of money, feel free to <a href="mailto:berninuben@gmail.com">contact me</a>. This is my place within the IPv4 space. </p>
 					<div className="work-status">
 						<p> Currently <span> open </span> to new opportunities. </p>
 					</div>
