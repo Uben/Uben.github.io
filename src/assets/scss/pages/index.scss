@@ -5,7 +5,7 @@
 	main#content {
 		display: flex;
 		flex-flow: row nowrap;
-		min-height: calc(100vh - 150px); // vh - (height of navigation + space from bottom margin line)
+		// min-height: calc(100vh - (150px + 165px)); // vh - ((height of navigation + space from bottom margin line) + body bottom padding)
 
 		> div {
 			width: 650px;

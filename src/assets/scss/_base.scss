@@ -4,6 +4,20 @@ body {
 	margin: 0;
 	padding: 0 75px 125px 75px;
 	background-color: $primary;
+	background-image: url('../images/png/bg-lines.png');
+	background-repeat: repeat;
+
+	* {
+		&::selection {
+			color: $white !important;
+			background: $alt !important;
+		}
+
+		&::-moz-selection {
+			color: $white !important;
+			background: $alt !important;
+		}
+	}
 
 	@media only screen and (max-width: 769px) {
 		padding: 0 35px 50px 35px;
@@ -64,7 +78,7 @@ body {
 				h3 { font-size: 28px; }
 				h4 { font-size: 24px; }
 				h5 { font-size: 21px; }
-				h6 { font-size: 15px; }
+				h6 { font-size: 18px; }
 				p  { font-size: 11px; }
 			}
 
@@ -74,8 +88,8 @@ body {
 				h3 { font-size: 24px; }
 				h4 { font-size: 21px; }
 				h5 { font-size: 18px; }
-				h6 { font-size: 14px; }
-				p  { font-size: 11px; }
+				h6 { font-size: 16px; }
+				p  { font-size: 12px; }
 			}
 		}
 	}
