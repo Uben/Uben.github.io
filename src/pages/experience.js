@@ -28,7 +28,7 @@ class Experience extends React.PureComponent {
 
 				<div className="intro intro-exp">
 					<h1> Experience </h1>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					<p> My experience with building things out on the internet began when I was a Sophomore in High School. While I always thought I would be a game developer, I ended up with a passion for software engineering as it made my life, and of those around me, easier. </p>
 				</div>
 
 				<div id="exp">
