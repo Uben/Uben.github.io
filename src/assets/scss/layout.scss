@@ -5,16 +5,17 @@
 	margin: 100px 0 0 0;
 
 	#site-outline {
-		width: calc(100% - 60px);
-		height: calc(100vh - 60px);
+		// width: calc(100% - 60px);
+		// height: calc(100vh - 60px);
+		// height: calc((var(--vh, 1vh) * 100) - 60px);
 
 		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
+		top: 25px;
+		left: 25px;
+		bottom: 25px;
+		right: 25px;
 
-		margin: 25px;
+		margin: 0 0 0 0;
 
 		border: 5px solid $outline_gray;
 		pointer-events: none;
@@ -22,9 +23,14 @@
 		z-index: 9999;
 
 		@media only screen and (max-width: 769px) {
-			width: calc(100% - 34px);
-			height: calc(100vh - 34px);
-			margin: 12px;
+			// width: calc(100% - 34px);
+			// height: calc(100vh - 34px);
+			// margin: 12px;
+			
+			top: 15px;
+			left: 15px;
+			bottom: 15px;
+			right: 15px;
 		}
 	}
 

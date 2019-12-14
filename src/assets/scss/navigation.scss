@@ -32,8 +32,8 @@ nav#navbar {
 		text-decoration: none;
 
 		.logo {
-			font-size: 27px;
-			line-height: 30px;
+			font-size: 24px;
+			line-height: 24px;
 			margin: 0;
 		}
 	}
@@ -42,15 +42,22 @@ nav#navbar {
 		display: flex;
 		flex-flow: row nowrap;
 
-		margin: 0 0 2px 0;
-		padding: 0 0 0 50px;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
 		list-style: none;
 
 		li {
 			list-style: none !important;
+			line-height: 21px !important;
 
-			&:not(:first-of-type) {
-				margin: 0 0 0 35px;
+			&.nav-divider {
+				font-size: 11px;
+				font-family: 'Roboto Mono';
+				cursor: default;
+
+				&:not(:last-of-type) {
+					margin: 0 20px 0 20px;
+				}
 			}
 		}
 	}
