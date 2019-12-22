@@ -57,7 +57,7 @@ class Experience extends React.PureComponent {
 
 						<div class="info">
 							<h5 class="title"> Web Developer Intern </h5>
-							<p class="subtitle"> two words digital agency <span> &bull; </span> june 2016 - september 2016 </p>
+							<p class="subtitle"> two words digital agency <span> &bull; </span> june 2016 - august 2016 </p>
 							<ul class="desc">
 								<li> E-Commerce websites with HTML, CSS, Javascript, & PHP </li>
 								<li> Maintained legacy Wordpress & PHP websites </li>
