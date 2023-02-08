@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    siteUrl: 'https://berninuben.com/'
+    siteUrl: `https://berninuben.com`
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -36,39 +36,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://berninuben.com',
-        sitemap: 'https://berninuben.com/sitemap.xml',
+        host: `https://berninuben.com`,
+        sitemap: `https://berninuben.com/sitemap.xml`,
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/sitemap.xml`,
-        query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
-
-            allSitePage {
-              edges {
-                node {
-                  path
-                }
-              }
-            }
-        }`,
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: `daily`,
-              priority: 0.7,
-            }
-          })
+        output: `/sitemap.xml`
       }
     }
   ],
