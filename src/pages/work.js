@@ -31,7 +31,7 @@ class Work extends React.PureComponent {
 
 				<div id="intro">
 					<h1> Work </h1>
-					<p> I have a track record of delivering high-quality & fast projects. Below is a small sample of work I have delivered over the past couple of years consisting of work and personal/school projects. </p>
+					<p> I have a track record of delivering performant & high-quality projects. Below is a small sample of work I have delivered over the past couple of years consisting of work and personal/school projects. </p>
 				</div>
 
 				<div id="work">
