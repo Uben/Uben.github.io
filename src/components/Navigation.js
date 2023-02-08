@@ -16,8 +16,8 @@ class Navigation extends React.PureComponent {
 					<ul>
 						<li className="nav-divider">x</li>
 						<li> <Link to="/work"> work </Link> </li>
-						<li className="nav-divider">x</li>
-						<li> <Link to="/experience"> experience </Link> </li>
+						{/*<li className="nav-divider">x</li>
+						<li> <Link to="/experience"> experience </Link> </li> */}
 						{/* <li className="nav-divider">x</li> */}
 						{/* <li> <Link to="/blog"> blog </Link> </li> */}
 						{/* <li className="nav-divider">x</li> */}
