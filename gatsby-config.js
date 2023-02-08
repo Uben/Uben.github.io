@@ -14,13 +14,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-cname`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          { family: `Playfair Display`, variants: [`700`, `900`] },
-          { family: `Roboto Mono`, variants: [`400`] },
-        ],
-      },
+        google: {
+          families: ['Playfair Display:700,900', 'Roboto Mono:400']
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
