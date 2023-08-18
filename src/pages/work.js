@@ -42,7 +42,8 @@ class Work extends React.PureComponent {
 
 						<div class="info">
 							<h5 class="title"> Stub Boxoffice </h5>
-							<p class="subtitle"> Private <span> &bull; </span> 2019 </p>
+							<p class="subtitle"> Private </p>
+							{/* <span> &bull; </span> 2019 */}
 							<p class="desc"> Stub Boxoffice is a reseller marketplace for ticketed events. Rebuilt on Express.js/Node, MySQL, and the TicketNetwork SOAP api. Improved page loads from 4-5 seconds with PHP to ~1 second with Node.js. Service served & cached through NGiNX acting as a reverse proxy. </p>
 							<OutboundLink href="https://stubboxoffice.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</OutboundLink>
 						</div>
@@ -55,7 +56,8 @@ class Work extends React.PureComponent {
 
 						<div class="info">
 							<h5 class="title"> Corsair Construction </h5>
-							<p class="subtitle"> Corsair Construction <span> &bull; </span> 2019 </p>
+							<p class="subtitle"> Corsair Construction </p>
+							{/* <span> &bull; </span> 2019 */}
 							<p class="desc"> Built portfolio site based on Wordpress for Corsair Construction LLC. I had full creative control on this site from site design to development. <b>(Warning: About page modified after delivery)</b> </p>
 							<OutboundLink href="https://corsairconstruction.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</OutboundLink>
 						</div>
@@ -68,7 +70,8 @@ class Work extends React.PureComponent {
 
 						<div class="info">
 							<h5 class="title"> C Webserver </h5>
-							<p class="subtitle"> NJIT CS288 <span> &bull; </span> 2017 </p>
+							<p class="subtitle"> NJIT CS288 </p>
+							{/* <span> &bull; </span> 2017 */}
 							<p class="desc"> An implementation of a simple HTTP webserver. The webserver can successfully respond to page requests initiated from a web browser along with the appropriate HTTP status code. With this project I gained a deeper understanding of: how to handle network connections in Linux/C, the client-server model, the HTTP protocol. </p>
 							<OutboundLink href="https://github.com/Uben/C-Webserver" title="Github" class="btn-highlight" target="_blank" rel="noopener noreferrer">Github</OutboundLink>
 						</div>
@@ -81,13 +84,14 @@ class Work extends React.PureComponent {
 
 						<div class="info">
 							<h5 class="title"> Athletix - United Kingdom </h5>
-							<p class="subtitle"> Athletix <span> &bull; </span> 2019 </p>
+							<p class="subtitle"> Athletix </p>
+							{/* <span> &bull; </span> 2019 */}
 							<p class="desc"> A seperate ecommerce site built on Wordpress for the launch of Athletix in the United Kingdom. Themed Woocommerce templates to match designs of the Home, Shop, About, CBD Oil, & Contact Pages. Athletix is a Broad Spectrum CBD Oil For Athletes. <b>(Warning: site has been modified after delivery)</b> </p>
 							<OutboundLink href="https://athletixcbd.co.uk/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</OutboundLink>
 						</div>
 					</div>
 
-					<div id="empathee" class="section">
+					{/* <div id="empathee" class="section">
 						<div class="img-container">
 							<img src={lSVG} alt="giant-L icon"/>
 						</div>
@@ -98,7 +102,7 @@ class Work extends React.PureComponent {
 							<p class="desc"> The Library of Standards a component of the empathee platform built with React.js, Koa.js/Node, &amp; MongoDB. With a library for coaching employees with relevant content to help improve the patient experience, empathee is a patient focused digital surveying tool. </p>
 							<OutboundLink href="https://empathee.com/" title="Visit Website" class="btn-highlight" target="_blank" rel="noopener noreferrer">Website</OutboundLink>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</Layout>
 		);
